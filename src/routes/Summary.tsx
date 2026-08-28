@@ -111,11 +111,11 @@ export default function Summary() {
                   <div className="ellipsis" style={{ fontSize: 13, color: 'var(--fg2)' }}>
                     {exercise.shortName ?? exercise.name}
                   </div>
-                  <div className="mono" style={{ fontSize: 9, fontWeight: 600, letterSpacing: '0.14em', marginTop: 2, color: tone.color }}>
+                  <div className="num" style={{ fontSize: 9, fontWeight: 600, letterSpacing: '0.14em', marginTop: 2, color: tone.color }}>
                     {label}
                   </div>
                 </div>
-                <div className="mono" style={{ fontSize: 13, fontWeight: 600, flex: 'none' }}>{next}</div>
+                <div className="num" style={{ fontSize: 13, fontWeight: 600, flex: 'none' }}>{next}</div>
               </div>
             </div>
           );
@@ -151,10 +151,10 @@ function Stat({ label, value, unit }: { label: string; value: number; unit: stri
   return (
     <div>
       <div className="label">{label}</div>
-      <div className="mono" style={{ fontSize: 34, fontWeight: 700, letterSpacing: '-0.04em', lineHeight: 1.1, marginTop: 4 }}>
+      <div className="num" style={{ fontSize: 34, fontWeight: 700, letterSpacing: '-0.04em', lineHeight: 1.1, marginTop: 4 }}>
         {value}
       </div>
-      <div className="mono" style={{ fontSize: 10, color: 'var(--mut2)' }}>{unit}</div>
+      <div className="num" style={{ fontSize: 10, color: 'var(--mut2)' }}>{unit}</div>
     </div>
   );
 }

@@ -110,12 +110,12 @@ export default function Settings() {
       <div style={{ marginTop: 22 }}>
         <div className="row" style={{ borderBottom: '1px solid var(--line)' }}>
           <span className="label" style={{ flex: 1 }}>НЕДЕЛЯ ПРОГРАММЫ</span>
-          <button className="btn" style={{ width: 52, minHeight: 44 }}
+          <button className="round round--sm"
             onClick={() => void patch({ weekOverride: Math.max(1, weekNumber(settings) - 1) })}>−</button>
-          <span className="mono" style={{ minWidth: 34, textAlign: 'center', fontSize: 20, fontWeight: 700 }}>
+          <span className="num" style={{ minWidth: 34, textAlign: 'center', fontSize: 20, fontWeight: 700 }}>
             {weekNumber(settings)}
           </span>
-          <button className="btn" style={{ width: 52, minHeight: 44 }}
+          <button className="round round--sm"
             onClick={() => void patch({ weekOverride: weekNumber(settings) + 1 })}>+</button>
         </div>
         <div style={{ padding: '8px var(--pad) 0', fontSize: 12, color: 'var(--mut2)', lineHeight: 1.35 }}>
@@ -137,11 +137,11 @@ export default function Settings() {
               </span>
               <span className="label">ДЕНЬ {row.ex.dayId}</span>
             </span>
-            <button className="btn" style={{ width: 48, minHeight: 44 }} onClick={() => void bump(row, -1)}>−</button>
-            <span className="mono" style={{ minWidth: 46, textAlign: 'right', fontSize: 17, fontWeight: 700 }}>
+            <button className="round round--sm" onClick={() => void bump(row, -1)}>−</button>
+            <span className="num" style={{ minWidth: 46, textAlign: 'right', fontSize: 17, fontWeight: 700 }}>
               {String(row.state.currentWeight).replace('.', ',')}
             </span>
-            <button className="btn" style={{ width: 48, minHeight: 44 }} onClick={() => void bump(row, 1)}>+</button>
+            <button className="round round--sm" onClick={() => void bump(row, 1)}>+</button>
           </div>
         ))}
       </div>
@@ -162,7 +162,7 @@ export default function Settings() {
               <button className="btn btn--ghost" onClick={() => setArmed(false)}>отмена</button>
             </>
           ) : (
-            <button className="btn" style={{ borderColor: 'var(--down)', color: 'var(--down)' }}
+            <button className="btn btn--danger"
               onClick={() => setArmed(true)}>
               СТЕРЕТЬ ВСЁ
             </button>

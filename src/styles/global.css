@@ -1,36 +1,43 @@
 @import './fonts.css';
 
 /* ============================================================
-   Прибор, а не приложение. Прямые углы, хайрлайны во всю ширину,
-   моноширинные цифры (при смене значения они не прыгают).
-   Цвет: акцент — «сейчас, действуй»; зелёный и розовый — только
-   итог упражнения.
+   Мягкая тёмная тема: скруглённые панели, приглушённые границы,
+   свечение на главном действии. Заголовки — обычным текстом,
+   капслок только на коротких служебных подписях.
    ============================================================ */
 
 :root {
-  --bg:        #0B0B0C;
-  --panel:     #101013;
-  --line:      #2B2B30;
-  --line-soft: #18181B;
+  --bg:      #08090C;
+  --panel:   #10131A;
+  --panel-2: #171B24;
+  --line:    rgba(255, 255, 255, 0.07);
+  --line-2:  rgba(255, 255, 255, 0.13);
 
-  --fg:   #F2F2F0;
-  --fg2:  #C8C8C4;
-  --mut:  #7C7C84;
-  --mut2: #52525A;
+  --fg:   #FFFFFF;
+  --fg2:  #B7BEC9;
+  --mut:  #8A93A3;
+  --mut2: #5D6573;
 
-  --acc:     #4CC3FF;
-  --acc-ink: #04141C;
+  --acc:      #2E7CF6;
+  --acc-ink:  #FFFFFF;
+  --acc-soft: rgba(46, 124, 246, 0.14);
+  --acc-line: rgba(46, 124, 246, 0.35);
+  --glow:     0 8px 28px rgba(46, 124, 246, 0.38);
+  --glow-soft: 0 0 24px rgba(46, 124, 246, 0.30);
 
-  --up:   #4FD18B;  /* прибавка */
-  --down: #FF4D6E;  /* откат */
+  --up:   #34D399;
+  --down: #FB7185;
 
-  --font-ui:   'Golos Text', system-ui, -apple-system, sans-serif;
-  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+  --font: 'Manrope', system-ui, -apple-system, sans-serif;
+
+  --r-card: 22px;
+  --r-box:  18px;
+  --r-btn:  16px;
 
   --tap:    56px;
-  --tap-lg: 76px;
+  --tap-lg: 62px;
   --pad:    20px;
-  --tabbar-h: 56px;
+  --tabbar-h: 60px;
 
   --safe-top:    env(safe-area-inset-top, 0px);
   --safe-bottom: env(safe-area-inset-bottom, 0px);
@@ -51,9 +58,10 @@ html {
 body {
   background: var(--bg);
   color: var(--fg);
-  font-family: var(--font-ui);
-  font-size: 16px;
-  line-height: 1.4;
+  font-family: var(--font);
+  font-size: 15px;
+  line-height: 1.5;
+  font-variant-numeric: tabular-nums;
   -webkit-font-smoothing: antialiased;
 
   /* В зале: без случайного зума, выделения и pull-to-refresh посреди подхода. */
@@ -71,7 +79,7 @@ button {
   color: inherit;
   background: none;
   border: none;
-  border-radius: 0;
+  border-radius: var(--r-btn);
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
@@ -99,89 +107,168 @@ h1, h2, h3, p { margin: 0; }
   flex-direction: column;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  padding-top: calc(var(--safe-top) + 28px);
+  padding-top: calc(var(--safe-top) + 26px);
 }
 
 /* ---------- Типографика ---------- */
 
-.mono { font-family: var(--font-mono); }
+/* Заголовок экрана — обычным текстом, не капсом: капс кричит и хуже читается. */
+.title {
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1.18;
+  letter-spacing: -0.02em;
+  text-wrap: pretty;
+}
 
-/* Микроподпись над значением: моно, капс, широкий трекинг. */
+.title--sm { font-size: 22px; font-weight: 700; letter-spacing: -0.02em; }
+
+/* Короткая служебная подпись. Капс только здесь и только коротким. */
 .label {
-  font-family: var(--font-mono);
-  font-size: 10px;
-  font-weight: 500;
-  letter-spacing: 0.18em;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
   color: var(--mut2);
   text-transform: uppercase;
 }
 
-.label--acc { color: var(--acc); font-weight: 700; letter-spacing: 0.16em; }
+.label--acc { color: var(--acc); }
 
 .unit {
-  font-family: var(--font-mono);
-  font-size: 10px;
-  font-weight: 500;
-  letter-spacing: 0.2em;
-  color: var(--mut);
-}
-
-/* Крупное число: моноширинное, чтобы не прыгало при смене. */
-.big {
-  font-family: var(--font-mono);
-  font-size: 82px;
+  font-size: 11px;
   font-weight: 700;
-  line-height: 0.9;
-  letter-spacing: -0.06em;
+  letter-spacing: 0.16em;
+  color: var(--mut);
+  text-transform: uppercase;
 }
 
-.title { font-size: 24px; font-weight: 600; line-height: 1.12; letter-spacing: -0.015em; }
+/* Крупное число. Цифры табличные — при смене значения не прыгают. */
+.big {
+  font-size: 86px;
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+  font-variant-numeric: tabular-nums;
+}
+
+.big--glow { color: var(--acc); text-shadow: 0 0 34px rgba(46, 124, 246, 0.55); }
+
+.body { font-size: 15px; line-height: 1.5; color: var(--fg2); }
+.hint { font-size: 13.5px; line-height: 1.45; color: var(--mut); }
 
 .muted { color: var(--mut); }
 .dim   { color: var(--mut2); }
 .acc   { color: var(--acc); }
+.num   { font-variant-numeric: tabular-nums; }
 
-/* ---------- Панель ---------- */
+/* ---------- Панели ---------- */
 
 .panel {
   border: 1px solid var(--line);
   background: var(--panel);
+  border-radius: var(--r-card);
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .panel__head {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   gap: 10px;
-  padding: 13px 16px;
-  border-bottom: 1px solid var(--line-soft);
+  padding: 15px 18px;
+  border-bottom: 1px solid var(--line);
 }
 
 .panel__foot {
-  padding: 14px 16px;
-  border-top: 1px solid var(--line-soft);
+  padding: 15px 18px;
+  border-top: 1px solid var(--line);
   text-align: center;
 }
 
-/* ---------- Строки-хайрлайны ---------- */
+.box {
+  border: 1px solid var(--line);
+  background: var(--panel-2);
+  border-radius: var(--r-box);
+  padding: 14px 16px;
+}
 
-.hr { height: 1px; background: var(--line); }
+/* ---------- Строки списка ---------- */
 
 .row {
   display: flex;
   align-items: center;
   gap: 12px;
   min-width: 0;
-  min-height: 46px;
-  border-bottom: 1px solid var(--line-soft);
+  min-height: 48px;
+  border-bottom: 1px solid var(--line);
   padding: 0 var(--pad);
 }
 
+.row:last-child { border-bottom: 0; }
 .row > :first-child { min-width: 0; }
 
 .ellipsis { min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+/* ---------- Значки и чипы ---------- */
+
+/* Кружок с иконкой или цифрой рядом с подписью. */
+.badge {
+  flex: none;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--acc-soft);
+  color: var(--acc);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.badge svg { width: 21px; height: 21px; }
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--line);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--fg2);
+}
+
+.chip--acc {
+  background: var(--acc-soft);
+  border-color: var(--acc-line);
+  color: var(--acc);
+}
+
+/* Круглая кнопка «назад» и круглые степперы. */
+.round {
+  flex: none;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--panel-2);
+  border: 1px solid var(--line);
+  color: var(--fg);
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.round--sm { width: 44px; height: 44px; font-size: 20px; }
+.round:active { opacity: 0.65; }
 
 /* ---------- Кнопки ---------- */
 
@@ -189,43 +276,49 @@ h1, h2, h3, p { margin: 0; }
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 10px;
   width: 100%;
   min-height: var(--tap);
-  padding: 0 16px;
-  font-family: var(--font-mono);
-  font-size: 15px;
-  font-weight: 500;
-  letter-spacing: 0.1em;
-  background: transparent;
+  padding: 0 18px;
+  border-radius: var(--r-btn);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  background: var(--panel-2);
   color: var(--fg);
   border: 1px solid var(--line);
-  transition: opacity 0.1s;
+  transition: opacity 0.12s, transform 0.08s;
 }
 
-.btn:active { opacity: 0.7; }
+.btn:active { opacity: 0.75; transform: scale(0.99); }
 
 .btn--primary {
   min-height: var(--tap-lg);
-  font-size: 17px;
-  font-weight: 700;
-  letter-spacing: 0.16em;
+  font-size: 15px;
   background: var(--acc);
   color: var(--acc-ink);
-  border-color: var(--acc);
+  border-color: transparent;
+  box-shadow: var(--glow);
 }
 
 .btn--ghost {
   min-height: 46px;
-  border: 0;
+  border-color: transparent;
+  background: transparent;
   font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: none;
   color: var(--mut);
-  letter-spacing: 0.1em;
 }
 
-.btn:disabled { opacity: 0.35; }
+.btn--danger { border-color: rgba(251, 113, 133, 0.4); color: var(--down); }
 
-/* ---------- Нижняя навигация: только слова, без иконок ---------- */
+.btn:disabled { opacity: 0.35; box-shadow: none; }
+.btn:disabled:active { transform: none; }
+
+/* ---------- Нижняя навигация ---------- */
 
 .tabbar {
   flex: none;
@@ -242,30 +335,23 @@ h1, h2, h3, p { margin: 0; }
   justify-content: center;
   min-width: 0;
   height: var(--tabbar-h);
-  margin-top: -1px;
-  border-top: 2px solid transparent;
-  font-family: var(--font-mono);
-  font-size: 9px;
-  font-weight: 500;
-  letter-spacing: 0.14em;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
   color: var(--mut2);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  border-radius: 0;
 }
 
-.tabbar__item.is-active {
-  border-top-color: var(--acc);
-  color: var(--acc);
-  font-weight: 700;
-}
-
+.tabbar__item.is-active { color: var(--acc); }
 .tabbar__item:active { opacity: 0.6; }
 
-/* ---------- Просмотр с компьютера: та же мобильная версия в рамке ---------- */
+/* ---------- Просмотр с компьютера ---------- */
 
 @media (min-width: 760px) and (min-height: 720px) {
-  html { background: #050506; }
+  html { background: #050609; }
 
   body {
     display: flex;
@@ -281,10 +367,98 @@ h1, h2, h3, p { margin: 0; }
     flex: none;
     overflow: hidden;
     background: var(--bg);
+    border-radius: 44px;
     transform: translateZ(0);
-    box-shadow: 0 0 0 10px #131317, 0 0 0 11px #303038, 0 40px 90px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 0 10px #14171E, 0 0 0 11px #2A2F3A, 0 40px 90px rgba(0, 0, 0, 0.7);
   }
 
   .app { max-width: none; }
   .screen::-webkit-scrollbar { width: 0; height: 0; }
+}
+
+/* ---------- Плавная полоса и точки прогресса ---------- */
+
+.rail {
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+}
+
+.rail__fill {
+  height: 100%;
+  border-radius: 999px;
+  background: var(--acc);
+  box-shadow: var(--glow-soft);
+  transition: width 0.4s linear;
+}
+
+/* Сегменты подходов: сделанные, текущий, будущие. */
+.segs { display: flex; gap: 5px; }
+
+.segs > i {
+  flex: 1;
+  height: 5px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.segs > i[data-on='done'] { background: var(--acc); }
+.segs > i[data-on='now']  { background: var(--acc); opacity: 0.45; }
+
+/* ---------- Карточка-пояснение с иконкой ---------- */
+
+.info {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  border-radius: var(--r-box);
+  padding: 15px 16px;
+}
+
+.info__icon {
+  flex: none;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--acc-soft);
+  color: var(--acc);
+}
+
+.info__icon svg { width: 20px; height: 20px; }
+
+/* ---------- Линейка значений под крупным числом ---------- */
+
+.ruler {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 14px;
+}
+
+.ruler > span {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--mut2);
+}
+
+.ruler > span[data-cur='true'] {
+  color: var(--fg);
+  font-weight: 800;
+  text-shadow: 0 0 18px rgba(46, 124, 246, 0.6);
+}
+
+/* Неактивная главная кнопка не должна выглядеть сломанной. */
+.btn--primary:disabled {
+  background: var(--panel-2);
+  color: var(--mut2);
+  border-color: var(--line);
+  box-shadow: none;
+  opacity: 1;
 }

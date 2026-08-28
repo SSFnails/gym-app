@@ -69,7 +69,7 @@ export default function Progress() {
         {([['body', 'ВЕС ТЕЛА'], ['lifts', 'ШТАНГА'], ['girth', 'ОБХВАТЫ']] as const).map(([id, label]) => (
           <button key={id} onClick={() => setTab(id)}
             style={{
-              height: 48, fontFamily: 'var(--font-mono)', fontSize: 10, letterSpacing: '0.14em',
+              height: 48, fontFamily: 'var(--font)', fontSize: 10, letterSpacing: '0.14em',
               fontWeight: tab === id ? 700 : 500,
               color: tab === id ? 'var(--acc)' : 'var(--mut2)',
               borderBottom: `2px solid ${tab === id ? 'var(--acc)' : 'transparent'}`,
@@ -98,11 +98,11 @@ export default function Progress() {
           <div style={{ flex: 1 }} />
           <div className="row" style={{ borderTop: '1px solid var(--line)', borderBottom: 0, minHeight: 76 }}>
             <span className="label" style={{ flex: 1 }}>ЗАПИСАТЬ СЕГОДНЯ</span>
-            <button className="btn" style={{ width: 52, minHeight: 52 }} onClick={() => setDraft((v) => Math.round((v - 0.1) * 10) / 10)}>−</button>
-            <span className="mono" style={{ minWidth: 62, textAlign: 'center', fontSize: 24, fontWeight: 700 }}>
+            <button className="round" onClick={() => setDraft((v) => Math.round((v - 0.1) * 10) / 10)}>−</button>
+            <span className="num" style={{ minWidth: 62, textAlign: 'center', fontSize: 24, fontWeight: 700 }}>
               {String(draft.toFixed(1)).replace('.', ',')}
             </span>
-            <button className="btn" style={{ width: 52, minHeight: 52 }} onClick={() => setDraft((v) => Math.round((v + 0.1) * 10) / 10)}>+</button>
+            <button className="round" onClick={() => setDraft((v) => Math.round((v + 0.1) * 10) / 10)}>+</button>
           </div>
           <div style={{ padding: '12px var(--pad) 14px' }}>
             <button className="btn btn--primary" style={{ minHeight: 60, fontSize: 15 }} onClick={() => void saveWeight()}>
@@ -173,9 +173,9 @@ export default function Progress() {
                     }}
                     style={{
                       width: 96, height: 48, textAlign: 'right', padding: '0 12px',
-                      fontFamily: 'var(--font-mono)', fontSize: 20, fontWeight: 700,
+                      fontFamily: 'var(--font)', fontSize: 20, fontWeight: 700,
                       color: 'var(--fg)', background: 'transparent',
-                      border: '1px solid var(--line)', borderRadius: 0,
+                      border: '1px solid var(--line)', borderRadius: 'var(--r-btn)',
                     }}
                   />
                   <span className="label" style={{ width: 20, flex: 'none' }}>СМ</span>
@@ -196,7 +196,7 @@ function Stat({ label, value }: { label: string; value: string }) {
   return (
     <div style={{ padding: '13px var(--pad)' }}>
       <div className="label">{label}</div>
-      <div className="mono" style={{ fontSize: 24, fontWeight: 700, marginTop: 4, letterSpacing: '-0.03em' }}>{value}</div>
+      <div className="num" style={{ fontSize: 24, fontWeight: 700, marginTop: 4, letterSpacing: '-0.03em' }}>{value}</div>
     </div>
   );
 }

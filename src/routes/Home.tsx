@@ -124,14 +124,14 @@ export default function Home() {
           <div style={{ padding: '24px var(--pad) 0' }}>
             <div className="label label--acc" style={{ marginBottom: 12 }}>СЛЕДУЮЩАЯ</div>
             <div style={{ display: 'flex', alignItems: 'flex-end', gap: 20 }}>
-              <div className="mono" style={{ fontSize: 86, fontWeight: 700, lineHeight: 0.78, letterSpacing: '-0.07em' }}>
+              <div className="num" style={{ fontSize: 86, fontWeight: 700, lineHeight: 0.78, letterSpacing: '-0.07em' }}>
                 {day.id}
               </div>
               <div style={{ paddingBottom: 6, fontSize: 18, fontWeight: 600, lineHeight: 1.2, color: 'var(--fg2)' }}>
                 {day.name}
               </div>
             </div>
-            <div className="mono" style={{ fontSize: 11, letterSpacing: '0.08em', color: 'var(--mut)', marginTop: 16 }}>
+            <div className="num" style={{ fontSize: 11, letterSpacing: '0.08em', color: 'var(--mut)', marginTop: 16 }}>
               {exercises.length} {plural(exercises.length, 'упражнение').toUpperCase()} · ОКОЛО {estimateMinutes(exercises)} МИН
             </div>
           </div>
@@ -163,14 +163,14 @@ export default function Home() {
                     borderBottom: '1px solid var(--line-soft)',
                   }}
                 >
-                  <span className="mono" style={{ fontSize: 10, color: '#45454B' }}>
+                  <span className="num" style={{ fontSize: 10, color: '#45454B' }}>
                     {String(i + 1).padStart(2, '0')}
                   </span>
                   <span className="ellipsis" style={{ fontSize: 14, color: 'var(--fg2)' }}>{ex.shortName ?? ex.name}</span>
-                  <span className="mono" style={{ fontSize: 13, fontWeight: 500, color: 'var(--mut)', textAlign: 'right' }}>
+                  <span className="num" style={{ fontSize: 13, fontWeight: 500, color: 'var(--mut)', textAlign: 'right' }}>
                     {ex.type === 'distance' ? `${sets} × ${ex.distance} м` : `${sets} × ${reps}`}
                   </span>
-                  <span className="mono" style={{ fontSize: 13, fontWeight: 700, textAlign: 'right' }}>
+                  <span className="num" style={{ fontSize: 13, fontWeight: 700, textAlign: 'right' }}>
                     {ex.conditional && !state?.resolvedConditional ? 'тест' : fmt(kg)}
                   </span>
                 </div>
@@ -185,15 +185,15 @@ export default function Home() {
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, minmax(0, 1fr))', borderTop: '1px solid var(--line)' }}>
         <div style={{ padding: '13px var(--pad)', borderRight: '1px solid var(--line-soft)' }}>
           <div className="label">ВЕС ТЕЛА</div>
-          <div className="mono" style={{ fontSize: 22, fontWeight: 700, marginTop: 4, letterSpacing: '-0.03em' }}>{fmt(lastWeight)}</div>
+          <div className="num" style={{ fontSize: 22, fontWeight: 700, marginTop: 4, letterSpacing: '-0.03em' }}>{fmt(lastWeight)}</div>
         </div>
         <div style={{ padding: '13px 16px', borderRight: '1px solid var(--line-soft)' }}>
           <div className="label">СРЕДН 7Д</div>
-          <div className="mono" style={{ fontSize: 22, fontWeight: 700, marginTop: 4, letterSpacing: '-0.03em', color: 'var(--fg2)' }}>{fmt(avgWeight)}</div>
+          <div className="num" style={{ fontSize: 22, fontWeight: 700, marginTop: 4, letterSpacing: '-0.03em', color: 'var(--fg2)' }}>{fmt(avgWeight)}</div>
         </div>
         <div style={{ padding: '13px 16px' }}>
           <div className="label">ПЕРЕРЫВ</div>
-          <div className="mono" style={{ fontSize: 22, fontWeight: 700, marginTop: 4, letterSpacing: '-0.03em', color: 'var(--fg2)' }}>
+          <div className="num" style={{ fontSize: 22, fontWeight: 700, marginTop: 4, letterSpacing: '-0.03em', color: 'var(--fg2)' }}>
             {gap === null ? '—' : `${gap} ${plural(gap, 'день')}`}
           </div>
         </div>

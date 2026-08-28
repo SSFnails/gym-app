@@ -49,7 +49,7 @@ export default function Chart({ points, line, height = 170, unit = 'кг' }: {
         <g key={i}>
           <line x1={padL} y1={y(v)} x2={W - 6} y2={y(v)} stroke="var(--line-soft)" strokeWidth="1" />
           <text x={0} y={y(v) + 4} fill="var(--mut2)" fontSize="9"
-            fontFamily="var(--font-mono)" letterSpacing="0.06em">
+            fontFamily="var(--font)" letterSpacing="0.06em">
             {String(v).replace('.', ',')}
           </text>
         </g>
@@ -65,10 +65,10 @@ export default function Chart({ points, line, height = 170, unit = 'кг' }: {
         <rect key={i} x={x(p.date) - 2.5} y={y(p.value) - 2.5} width="5" height="5" fill="var(--fg)" />
       ))}
 
-      <text x={padL} y={H - 4} fill="var(--mut2)" fontSize="9" fontFamily="var(--font-mono)">
+      <text x={padL} y={H - 4} fill="var(--mut2)" fontSize="9" fontFamily="var(--font)">
         {fmtDate(points[0].date)}
       </text>
-      <text x={W - 6} y={H - 4} textAnchor="end" fill="var(--mut2)" fontSize="9" fontFamily="var(--font-mono)">
+      <text x={W - 6} y={H - 4} textAnchor="end" fill="var(--mut2)" fontSize="9" fontFamily="var(--font)">
         {fmtDate(points[points.length - 1].date)} · {unit}
       </text>
     </svg>

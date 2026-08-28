@@ -12,6 +12,29 @@ import {
 } from '../lib/session.ts';
 import { trimmable } from '../lib/history.ts';
 import { activeVariant, convertWeight, effective, variantsFor } from '../lib/variants.ts';
+import { movement, type Pattern } from '../db/movements.ts';
+import { IconLower, IconShield, IconTarget, IconUpper } from '../components/Pictogram.tsx';
+
+const LOWER_BODY = new Set<Pattern>(['squat', 'quad', 'ham', 'calf', 'hinge', 'lowback']);
+
+/** Чипы под названием: какая часть тела и насколько движение тяжёлое. */
+function tags(catalogId: string): string[] {
+  const m = movement(catalogId);
+  if (!m) return [];
+  const zone = m.pattern === 'carry' ? 'всё тело' : LOWER_BODY.has(m.pattern) ? 'низ тела' : 'верх тела';
+  const weightClass = m.tier === 'main' ? 'базовое' : m.tier === 'secondary' ? 'среднее' : 'добивка';
+  return [zone, weightClass];
+}
+
+function Zone({ catalogId }: { catalogId: string }) {
+  const m = movement(catalogId);
+  const lower = m ? LOWER_BODY.has(m.pattern) : false;
+  return (
+    <span className="badge" style={{ width: 44, height: 44 }}>
+      {lower ? <IconLower /> : <IconUpper />}
+    </span>
+  );
+}
 
 type Phase = 'general' | 'warmup' | 'test' | 'work' | 'superset' | 'rest' | 'saving';
 
@@ -203,7 +226,7 @@ export default function Workout() {
     if (askWarmup) {
       return (
         <main className="screen">
-          <Head left={`ДЕНЬ ${plan.day.id}`} right="" />
+          <Head left={`ДЕНЬ ${plan.day.id}`} right="" onBack={() => setAskWarmup(false)} />
           <div style={{ padding: '14px var(--pad) 0' }} className="title">Не отмечено сгибание ног</div>
           <Hint>
             В днях B и C лёгкое сгибание ног обязательно — это колено, а не формальность.
@@ -222,7 +245,7 @@ export default function Workout() {
 
     return (
       <main className="screen">
-        <Head left={`ДЕНЬ ${plan.day.id} · НЕД ${String(plan.week).padStart(2, '0')}`} right="ПЕРЕД ТРЕНИРОВКОЙ" />
+        <Head left={`ДЕНЬ ${plan.day.id} · НЕД ${String(plan.week).padStart(2, '0')}`} right="РАЗМИНКА" onBack={() => navigate('/')} />
         <div style={{ padding: '14px var(--pad) 0' }} className="title">Общая разминка</div>
         <Hint>Один раз за тренировку. Отмечай, что прошёл.</Hint>
         <div style={{ flex: 1, minHeight: 0, marginTop: 14 }}>
@@ -249,7 +272,7 @@ export default function Workout() {
   if (phase === 'warmup') {
     return (
       <main className="screen">
-        <Head left={`УПРАЖНЕНИЕ ${exIdx + 1} ИЗ ${plan.items.length}`} right="" />
+        <Head left={`УПРАЖНЕНИЕ ${exIdx + 1} ИЗ ${plan.items.length}`} right="" onBack={() => navigate('/')} />
         <div style={{ padding: '14px var(--pad) 0' }} className="title">Разминочные подходы</div>
         <div style={{ padding: '6px var(--pad) 0', fontSize: 15, color: 'var(--fg2)' }}>{ex.name}</div>
         <Hint>
@@ -260,7 +283,7 @@ export default function Workout() {
           {item.warmup.map((w, i) => (
             <CheckRow key={i} on={warmChecked[i]} onClick={() => setWarmChecked((c) => c.map((v, k) => (k === i ? !v : v)))}>
               <span className="label" style={{ width: 24, flex: 'none' }}>{i + 1}</span>
-              <span className="mono" style={{ fontSize: 20, fontWeight: 700, color: warmChecked[i] ? 'var(--mut2)' : 'var(--fg)' }}>
+              <span className="num" style={{ fontSize: 20, fontWeight: 700, color: warmChecked[i] ? 'var(--mut2)' : 'var(--fg)' }}>
                 {kg(w.weight)} кг × {w.reps}
               </span>
             </CheckRow>
@@ -305,30 +328,41 @@ export default function Workout() {
 
     return (
       <main className="screen">
-        <Head left={`УПРАЖНЕНИЕ ${exIdx + 1} ИЗ ${plan.items.length}`} right="ПЕРВАЯ СЕССИЯ" />
+        <Head left={`УПРАЖНЕНИЕ ${exIdx + 1} ИЗ ${plan.items.length}`} right="ПЕРВАЯ СЕССИЯ" onBack={() => navigate('/')} />
         <div style={{ padding: '14px var(--pad) 0' }} className="title">Подтягивания</div>
-        <Hint>
-          Один раз меряем максимум — от него зависит, работаем подтягиваниями
-          или уходим на тягу верхнего блока. Дальше этот экран не появится.
-        </Hint>
+        <div style={{ padding: '14px var(--pad) 0' }}>
+          <div className="info">
+            <span className="info__icon"><IconTarget /></span>
+            <span style={{ minWidth: 0 }}>
+              <span className="label label--acc" style={{ display: 'block', marginBottom: 4 }}>Честный максимум</span>
+              <span className="hint">
+                Меряем один раз, без раскачки. От результата зависит, работаем подтягиваниями
+                или уходим на тягу верхнего блока. Дальше этот экран не появится.
+              </span>
+            </span>
+          </div>
+        </div>
 
-        <div className="panel" style={{ flex: 1, minHeight: 0, margin: '18px var(--pad) 0' }}>
+        <div className="panel" style={{ margin: '16px var(--pad) 0' }}>
           <div className="panel__head">
             <span className="label label--acc">ТЕСТ МАКСИМУМА</span>
             <span className="label">ЧИСТО, БЕЗ РАСКАЧКИ</span>
           </div>
-          <div style={{ flex: 1, display: 'flex', alignItems: 'center', gap: 14, padding: '0 16px' }}>
-            <button className="btn" style={{ width: 70, minHeight: 60, fontSize: 26 }}
-              onClick={() => setTestReps((n) => Math.max(0, n - 1))}>−</button>
-            <div style={{ flex: 1, textAlign: 'center' }}>
-              <div className="big">{testReps}</div>
-              <div className="unit" style={{ marginTop: 12 }}>РАЗ ЗА ПОДХОД</div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 14, padding: '30px 18px' }}>
+            <button className="round" onClick={() => setTestReps((n) => Math.max(0, n - 1))}>−</button>
+            <div style={{ flex: 1, textAlign: 'center', minWidth: 0 }}>
+              <div className="big big--glow">{testReps}</div>
+              <div className="unit" style={{ marginTop: 10 }}>раз за подход</div>
+              <div className="ruler">
+                {[-2, -1, 0, 1, 2].map((d) => (
+                  <span key={d} data-cur={d === 0}>{Math.max(0, testReps + d)}</span>
+                ))}
+              </div>
             </div>
-            <button className="btn" style={{ width: 70, minHeight: 60, fontSize: 26 }}
-              onClick={() => setTestReps((n) => Math.min(30, n + 1))}>+</button>
+            <button className="round" onClick={() => setTestReps((n) => Math.min(30, n + 1))}>+</button>
           </div>
           <div className="panel__foot">
-            <span className="mono" style={{ fontSize: 12, letterSpacing: '0.08em', color: 'var(--mut)' }}>
+            <span className="num" style={{ fontSize: 12, letterSpacing: '0.08em', color: 'var(--mut)' }}>
               {testReps >= 5 ? `РАБОТАЕМ ПО ${testReps - 1} ПОВТОРОВ` : 'УХОДИМ НА ТЯГУ ВЕРХНЕГО БЛОКА, 55 КГ'}
             </span>
           </div>
@@ -345,8 +379,6 @@ export default function Workout() {
 
   if (phase === 'rest') {
     const over = rest === 0;
-    const ticks = 18;
-    const filled = restTotal > 0 ? Math.round((rest / restTotal) * ticks) : 0;
     const ready = !needsRir || rir !== null;
 
     return (
@@ -354,19 +386,15 @@ export default function Workout() {
         <Head left={`УПРАЖНЕНИЕ ${exIdx + 1} ИЗ ${plan.items.length}`} right={`ПОДХОД ${setIdx + 1} ЗАПИСАН`} />
         <div style={{ padding: '14px var(--pad) 0' }} className="title">{ex.name}</div>
 
-        <div className="panel" style={{ flex: 1, minHeight: 0, margin: '18px var(--pad) 0' }}>
+        <div className="panel" style={{ margin: '16px var(--pad) 0' }}>
           <div className="panel__head">
             <span className="label label--acc">{over ? 'ОТДЫХ ОКОНЧЕН' : 'ОТДЫХ'}</span>
             <span className="label">{kg(item.weight)} КГ × {doneReps}</span>
           </div>
-          <div style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '0 16px' }}>
-            <div className="mono acc" style={{ fontSize: 84, fontWeight: 700, lineHeight: 0.95, letterSpacing: '-0.05em', textAlign: 'center' }}>
-              {clock(rest)}
-            </div>
-            <div style={{ display: 'flex', gap: 3, marginTop: 22 }}>
-              {Array.from({ length: ticks }, (_, i) => (
-                <div key={i} style={{ flex: 1, height: 10, background: i < filled ? 'var(--acc)' : '#202024' }} />
-              ))}
+          <div style={{ padding: '30px 18px' }}>
+            <div className="big big--glow" style={{ textAlign: 'center' }}>{clock(rest)}</div>
+            <div className="rail" style={{ marginTop: 24 }}>
+              <div className="rail__fill" style={{ width: `${restTotal ? (rest / restTotal) * 100 : 0}%` }} />
             </div>
           </div>
           {needsRir && (
@@ -377,7 +405,7 @@ export default function Workout() {
               </div>
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, minmax(0, 1fr))', gap: 7 }}>
                 {[0, 1, 2, 3].map((v) => (
-                  <button key={v} onClick={() => setRir(v)} className="mono"
+                  <button key={v} onClick={() => setRir(v)} className="num"
                     style={{
                       height: 58, fontSize: 18, fontWeight: rir === v ? 700 : 500,
                       border: `1px solid ${rir === v ? 'var(--acc)' : 'var(--line)'}`,
@@ -418,7 +446,7 @@ export default function Workout() {
 
     return (
       <main className="screen">
-        <Head left="ЗАМЕНА УПРАЖНЕНИЯ" right="" />
+        <Head left="ЗАМЕНА УПРАЖНЕНИЯ" right="" onBack={() => setSwapOpen(false)} />
         <div style={{ padding: '14px var(--pad) 0' }} className="title">{item.exercise.name}</div>
         <Hint>
           Вес пересчитан под другой снаряд — это первая прикидка, дальше алгоритм
@@ -460,20 +488,38 @@ export default function Workout() {
   return (
     <main className="screen">
       <Head left={`УПРАЖНЕНИЕ ${exIdx + 1} ИЗ ${plan.items.length}`}
-        right={askSkip ? '' : 'ПРОПУСТИТЬ'} onRight={askSkip ? undefined : () => setAskSkip(true)} />
+        right={askSkip ? '' : 'ПРОПУСТИТЬ'} onRight={askSkip ? undefined : () => setAskSkip(true)}
+        onBack={() => navigate('/')} />
 
-      <div style={{ display: 'flex', alignItems: 'flex-start', gap: 10, padding: '14px var(--pad) 0' }}>
-        <div style={{ flex: 1, minWidth: 0 }}>
-          <div className="title">{pair && ss ? ss.name : ex.name}</div>
-          {swapped && !pair && <div className="label label--acc" style={{ marginTop: 4 }}>ЗАМЕНА · ВМЕСТО «{item.exercise.shortName ?? item.exercise.name}»</div>}
+      {!pair && !askSkip && (
+        <div style={{ padding: '14px var(--pad) 0' }}>
+          <div className="segs">
+            {Array.from({ length: sets }, (_, i) => (
+              <i key={i} data-on={i < setIdx ? 'done' : i === setIdx ? 'now' : 'wait'} />
+            ))}
+          </div>
+        </div>
+      )}
+
+      <div style={{ padding: '16px var(--pad) 0' }}>
+        <div style={{ display: 'flex', alignItems: 'flex-start', gap: 14 }}>
+          <div className="title" style={{ flex: 1, minWidth: 0 }}>{pair && ss ? ss.name : ex.name}</div>
+          <Zone catalogId={pair && ss ? ss.catalogId : item.exercise.catalogId} />
         </div>
         {!pair && !askSkip && (
-          <button className="label" onClick={() => setSwapOpen(true)}
-            style={{ flex: 'none', border: '1px solid var(--line)', padding: '11px 10px', color: 'var(--fg2)' }}>
-            ЗАМЕНИТЬ
-          </button>
+          <div style={{ display: 'flex', gap: 8, marginTop: 13, flexWrap: 'wrap' }}>
+            {tags(item.exercise.catalogId).map((t) => <span key={t} className="chip">{t}</span>)}
+            <button className="chip chip--acc" onClick={() => setSwapOpen(true)}>Заменить</button>
+            {swapped && (
+              <span className="chip ellipsis" style={{ maxWidth: 190 }}>
+                вместо «{item.exercise.shortName ?? item.exercise.name}»
+              </span>
+            )}
+          </div>
         )}
       </div>
+
+
 
       {askSkip ? (
         <div style={{ flex: 1, minHeight: 0, marginTop: 18 }}>
@@ -511,12 +557,12 @@ export default function Workout() {
             <>
               <div style={{ padding: '0 var(--pad) 12px' }} className="label">ПОЧЕМУ ПРОПУСКАЕМ</div>
               {SKIP_REASONS.map((r) => (
-                <button key={r.id} className="mono" onClick={() => doSkip(r.id)}
+                <button key={r.id} className="num" onClick={() => doSkip(r.id)}
                   style={{ display: 'block', width: '100%', textAlign: 'left', padding: '0 var(--pad)', minHeight: 64, fontSize: 15, letterSpacing: '0.08em', borderBottom: '1px solid var(--line-soft)' }}>
                   {r.label}
                 </button>
               ))}
-              <button className="mono" onClick={() => setAskTime(true)}
+              <button className="num" onClick={() => setAskTime(true)}
                 style={{ display: 'block', width: '100%', textAlign: 'left', padding: '0 var(--pad)', minHeight: 64, fontSize: 15, letterSpacing: '0.08em', borderBottom: '1px solid var(--line-soft)', color: 'var(--acc)' }}>
                 МАЛО ВРЕМЕНИ — УРЕЗАТЬ
               </button>
@@ -526,12 +572,12 @@ export default function Workout() {
         </div>
       ) : (
         <>
-          <div className="panel" style={{ flex: 1, minHeight: 0, margin: '18px var(--pad) 0' }}>
+          <div className="panel" style={{ margin: '16px var(--pad) 0' }}>
             <div className="panel__head">
               <span className="label label--acc">{pair ? 'СВЯЗКА · БЕЗ ОТДЫХА' : `ПОДХОД ${setIdx + 1} ИЗ ${sets}`}</span>
               <span className="label">{pair ? `ПОСЛЕ ПОДХОДА ${setIdx + 1}` : ''}</span>
             </div>
-            <div style={{ flex: 1, display: 'flex', alignItems: 'center' }}>
+            <div style={{ display: 'flex', alignItems: 'center', padding: '34px 0' }}>
               <div style={{ flex: 1, textAlign: 'center', padding: '0 8px' }}>
                 <div className="big">{kg(pair && ss ? ss.weight : item.weight)}</div>
                 <div className="unit" style={{ marginTop: 12 }}>КИЛОГРАММОВ</div>
@@ -543,7 +589,7 @@ export default function Workout() {
               </div>
             </div>
             <div className="panel__foot">
-              <span className="mono" style={{ fontSize: 12, letterSpacing: '0.1em', color: 'var(--mut)' }}>
+              <span className="num" style={{ fontSize: 12, letterSpacing: '0.1em', color: 'var(--mut)' }}>
                 {pair ? 'СРАЗУ, НЕ ОТДЫХАЯ'
                   : left > 0 ? `ОСТАЛОСЬ ЕЩЁ ${left} ${plural(left, 'подход').toUpperCase()}`
                   : 'ЭТОТ ПОДХОД ПОСЛЕДНИЙ'}
@@ -552,13 +598,19 @@ export default function Workout() {
           </div>
 
           {ex.note && !pair && (
-            <div style={{ display: 'flex', gap: 12, padding: '14px var(--pad) 0' }}>
-              <div style={{ width: 2, background: 'var(--line)', flex: 'none' }} />
-              <div style={{ fontSize: 13, lineHeight: 1.4, color: 'var(--mut)' }}>{ex.note}</div>
+            <div style={{ padding: '14px var(--pad) 0' }}>
+              <div className="info">
+                <span className="info__icon"><IconShield /></span>
+                <span style={{ minWidth: 0 }}>
+                  <span className="label label--acc" style={{ display: 'block', marginBottom: 4 }}>Техника</span>
+                  <span className="hint">{ex.note}</span>
+                </span>
+              </div>
             </div>
           )}
 
-          <div style={{ padding: '16px var(--pad) 0' }}>
+          <div style={{ flex: 1, minHeight: 12 }} />
+          <div style={{ padding: '0 var(--pad) 18px' }}>
             <button className="btn btn--primary" onClick={() => {
               primeAudio();
               if (pair) { void recordAndRest(); return; }
@@ -569,13 +621,11 @@ export default function Workout() {
             </button>
             {!pair && !isDistance && ex.repRange && (
               <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginTop: 10 }}>
-                <button className="btn" style={{ width: 60, minHeight: 52, fontSize: 22 }}
-                  onClick={() => setDoneReps((r) => Math.max(1, r - 1))}>−</button>
-                <span className="mono" style={{ flex: 1, textAlign: 'center', fontSize: 13, letterSpacing: '0.1em', color: doneReps === target ? 'var(--mut2)' : 'var(--acc)' }}>
+                <button className="round" onClick={() => setDoneReps((r) => Math.max(1, r - 1))}>−</button>
+                <span className="num" style={{ flex: 1, textAlign: 'center', fontSize: 13, letterSpacing: '0.1em', color: doneReps === target ? 'var(--mut2)' : 'var(--acc)' }}>
                   {doneReps === target ? 'ВЫШЛО РОВНО В ЦЕЛЬ' : `СДЕЛАЛ ${doneReps}`}
                 </span>
-                <button className="btn" style={{ width: 60, minHeight: 52, fontSize: 22 }}
-                  onClick={() => setDoneReps((r) => Math.min(50, r + 1))}>+</button>
+                <button className="round" onClick={() => setDoneReps((r) => Math.min(50, r + 1))}>+</button>
               </div>
             )}
             {pair && <button className="btn btn--ghost" onClick={() => void recordAndRest()}>ПРОПУСТИТЬ СВЯЗКУ</button>}
@@ -584,7 +634,7 @@ export default function Workout() {
           {item.previous && !pair && (
             <div className="row" style={{ marginTop: 14, borderTop: '1px solid var(--line)', borderBottom: 0, height: 52 }}>
               <span className="label" style={{ width: 92, flex: 'none' }}>ПРОШЛЫЙ РАЗ</span>
-              <span className="mono" style={{ fontSize: 13, color: 'var(--fg2)' }}>
+              <span className="num" style={{ fontSize: 13, color: 'var(--fg2)' }}>
                 {kg(item.previous.weight)} кг · {item.previous.reps.join(' ')}
               </span>
             </div>
@@ -602,13 +652,16 @@ function firstPhase(item: PlanItem): Phase {
   return item.exercise.conditional && !item.state.resolvedConditional ? 'test' : 'work';
 }
 
-function Head({ left, right, onRight }: { left: string; right: string; onRight?: () => void }) {
+function Head({ left, right, onRight, onBack }: {
+  left: string; right: string; onRight?: () => void; onBack?: () => void;
+}) {
   return (
-    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', padding: '0 var(--pad)' }}>
-      <span className="label">{left}</span>
-      {onRight
-        ? <button className="label" style={{ color: 'var(--mut)' }} onClick={onRight}>{right}</button>
-        : <span className="label">{right}</span>}
+    <div style={{ display: 'flex', alignItems: 'center', gap: 12, padding: '0 var(--pad)' }}>
+      {onBack && <button className="round round--sm" onClick={onBack} aria-label="Назад">←</button>}
+      <span className="label" style={{ flex: 1 }}>{left}</span>
+      {right && (onRight
+        ? <button className="chip" onClick={onRight}>{right}</button>
+        : <span className="chip">{right}</span>)}
     </div>
   );
 }
@@ -626,7 +679,12 @@ function CheckRow({ on, onClick, children }: { on?: boolean; onClick: () => void
     <button onClick={onClick}
       style={{ display: 'flex', alignItems: 'center', gap: 14, width: '100%', textAlign: 'left',
         padding: '0 var(--pad)', minHeight: 64, borderBottom: '1px solid var(--line-soft)' }}>
-      <span style={{ width: 26, height: 26, flex: 'none', border: `1px solid ${on ? 'var(--acc)' : 'var(--line)'}`, background: on ? 'var(--acc)' : 'transparent' }} />
+      <span style={{
+        width: 28, height: 28, flex: 'none', borderRadius: 9,
+        border: `1px solid ${on ? 'var(--acc)' : 'var(--line-2)'}`,
+        background: on ? 'var(--acc)' : 'transparent',
+        boxShadow: on ? 'var(--glow-soft)' : 'none',
+      }} />
       {children}
     </button>
   );
@@ -642,7 +700,7 @@ function SwapRow({ name, weight, reps, note, locked, isDistance, onPick }: {
         borderBottom: '1px solid var(--line-soft)', opacity: locked ? 0.4 : 1 }}>
       <div style={{ display: 'flex', alignItems: 'baseline', gap: 10 }}>
         <span style={{ flex: 1, minWidth: 0, fontSize: 15, color: 'var(--fg)' }}>{name}</span>
-        <span className="mono" style={{ flex: 'none', fontSize: 15, fontWeight: 700 }}>
+        <span className="num" style={{ flex: 'none', fontSize: 15, fontWeight: 700 }}>
           {weight > 0 ? `${kg(weight)} кг` : 'свой вес'}{isDistance ? '' : ` × ${reps}`}
         </span>
       </div>

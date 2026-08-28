@@ -10,8 +10,7 @@ const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 '
   + '(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36';
 
 const FAMILIES = [
-  { css: 'Golos+Text:wght@400;600;700', slug: 'golos' },
-  { css: 'JetBrains+Mono:wght@400;500;700', slug: 'jbmono' },
+  { css: 'Manrope:wght@400;500;600;700;800', slug: 'manrope' },
 ];
 
 const KEEP = new Set(['cyrillic', 'latin']);
