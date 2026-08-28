@@ -13,6 +13,7 @@ import {
 import { trimmable } from '../lib/history.ts';
 import { activeVariant, convertWeight, effective, variantsFor } from '../lib/variants.ts';
 import { movement, type Pattern } from '../db/movements.ts';
+import { exerciseImage } from '../lib/images.ts';
 import { IconLower, IconShield, IconTarget, IconUpper } from '../components/Pictogram.tsx';
 
 const LOWER_BODY = new Set<Pattern>(['squat', 'quad', 'ham', 'calf', 'hinge', 'lowback']);
@@ -484,12 +485,24 @@ export default function Workout() {
   const ss = item.exercise.superset;
   const left = sets - setIdx - 1;
   const swapped = Boolean(item.state.variantId);
+  const shot = exerciseImage(pair && ss ? ss.catalogId : item.exercise.catalogId);
 
   return (
     <main className="screen">
       <Head left={`УПРАЖНЕНИЕ ${exIdx + 1} ИЗ ${plan.items.length}`}
         right={askSkip ? '' : 'ПРОПУСТИТЬ'} onRight={askSkip ? undefined : () => setAskSkip(true)}
         onBack={() => navigate('/')} />
+
+      {!pair && !askSkip && shot && (
+        <div style={{ padding: '14px var(--pad) 0' }}>
+          <div style={{
+            borderRadius: 'var(--r-card)', overflow: 'hidden',
+            border: '1px solid var(--line)', background: 'var(--panel)',
+          }}>
+            <img src={shot} alt="" style={{ display: 'block', width: '100%', height: 168, objectFit: 'cover' }} />
+          </div>
+        </div>
+      )}
 
       {!pair && !askSkip && (
         <div style={{ padding: '14px var(--pad) 0' }}>
