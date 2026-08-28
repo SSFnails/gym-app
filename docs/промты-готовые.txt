@@ -1,4 +1,5 @@
 ГОТОВЫЕ ПРОМТЫ ДЛЯ КАРТИНОК УПРАЖНЕНИЙ
+(версия с силуэтами — без лиц и людей)
 
 Как пользоваться:
   1. Найди блок нужного упражнения.
@@ -8,12 +9,12 @@
 
 Один блок = одна картинка. Файл целиком отправлять не нужно.
 
-Порядок: сначала программа (то, что делаешь каждую тренировку),
-потом связки, потом замены. Первые двадцать с лишним — самые нужные,
-остальное можно не делать вовсе.
+Быстрее так: первый раз вставь блок целиком, а дальше в том же чате пиши
+«то же самое, другое упражнение:» и одну строку Exercise из следующего блока.
+Так и быстрее, и стиль не поплывёт.
 
-Совет: сгенерируй первую, посмотри что вышло, покажи мне. Если стиль
-не тот — поправим общий блок до того, как ты нагенеришь сотню.
+Порядок: сначала программа, потом связки, потом замены.
+Замены нужны редко, их можно не делать вовсе.
 
 
 
@@ -26,15 +27,16 @@
 ЧТО:   Гиперэкстензия с весом
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man on a forty five degree back extension bench holding a weight plate at the chest
 
@@ -44,15 +46,16 @@ Exercise: man on a forty five degree back extension bench holding a weight plate
 ЧТО:   Жим гантелей лёжа, полунейтральный
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man lying on a flat bench pressing two dumbbells, semi-neutral grip, elbows tucked
 
@@ -62,15 +65,16 @@ Exercise: man lying on a flat bench pressing two dumbbells, semi-neutral grip, e
 ЧТО:   Жим гантелей на наклонной 30°
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man on a thirty degree incline bench pressing two dumbbells
 
@@ -80,15 +84,16 @@ Exercise: man on a thirty degree incline bench pressing two dumbbells
 ЧТО:   Жим гантелей сидя, нейтральный хват
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man seated pressing two dumbbells overhead with neutral grip, back supported
 
@@ -98,15 +103,16 @@ Exercise: man seated pressing two dumbbells overhead with neutral grip, back sup
 ЧТО:   Жим ногами, средняя постановка
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man on an angled leg press machine, knees bent to ninety degrees only, lower back flat on the pad
 
@@ -116,15 +122,16 @@ Exercise: man on an angled leg press machine, knees bent to ninety degrees only,
 ЧТО:   Задняя дельта в тренажёре
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man seated in a reverse pec deck machine, arms opening backward
 
@@ -134,15 +141,16 @@ Exercise: man seated in a reverse pec deck machine, arms opening backward
 ЧТО:   Махи гантелей в стороны
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man standing raising two dumbbells out to the sides to shoulder height, elbows leading
 
@@ -152,15 +160,16 @@ Exercise: man standing raising two dumbbells out to the sides to shoulder height
 ЧТО:   Молотковые сгибания
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man standing curling two dumbbells with neutral hammer grip
 
@@ -170,15 +179,16 @@ Exercise: man standing curling two dumbbells with neutral hammer grip
 ЧТО:   Подтягивания или тяга верхнего блока
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man hanging from a pull-up bar mid-rep, chin approaching the bar, back muscles engaged
 
@@ -188,15 +198,16 @@ Exercise: man hanging from a pull-up bar mid-rep, chin approaching the bar, back
 ЧТО:   Присед со штангой до ящика
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man squatting with a barbell on his back down to a box at parallel depth, not below
 
@@ -206,15 +217,16 @@ Exercise: man squatting with a barbell on his back down to a box at parallel dep
 ЧТО:   Разгибания на блоке, канат
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man standing pushing a rope attachment down on a cable machine, elbows pinned to sides
 
@@ -224,15 +236,16 @@ Exercise: man standing pushing a rope attachment down on a cable machine, elbows
 ЧТО:   Румынская тяга со штангой
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man performing a romanian deadlift with a barbell, hips pushed back, bar sliding along the thighs, knees soft
 
@@ -242,15 +255,16 @@ Exercise: man performing a romanian deadlift with a barbell, hips pushed back, b
 ЧТО:   Сгибание ног лёжа
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man lying prone on a lying leg curl machine, heels curled toward glutes
 
@@ -260,15 +274,16 @@ Exercise: man lying prone on a lying leg curl machine, heels curled toward glute
 ЧТО:   Сгибания запястий + обратные
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: close view of forearms resting on a bench, light dumbbells, wrists curling
 
@@ -278,15 +293,16 @@ Exercise: close view of forearms resting on a bench, light dumbbells, wrists cur
 ЧТО:   Сгибания с EZ-грифом
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man standing curling an EZ curl bar, elbows at the sides
 
@@ -296,15 +312,16 @@ Exercise: man standing curling an EZ curl bar, elbows at the sides
 ЧТО:   Становая с трэп-бара
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man standing inside a hexagonal trap bar, mid-lift, neutral grip at sides, flat back, hips hinged
 
@@ -314,15 +331,16 @@ Exercise: man standing inside a hexagonal trap bar, mid-lift, neutral grip at si
 ЧТО:   Тяга верхнего блока широким хватом
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man seated at a lat pulldown machine pulling a wide bar to the upper chest
 
@@ -332,15 +350,16 @@ Exercise: man seated at a lat pulldown machine pulling a wide bar to the upper c
 ЧТО:   Тяга горизонтального блока, нейтральная рукоять
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man seated at a cable row machine pulling a neutral handle to the torso, shoulder blades squeezed
 
@@ -350,15 +369,16 @@ Exercise: man seated at a cable row machine pulling a neutral handle to the tors
 ЧТО:   Тяга штанги в наклоне
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man bent over at 45 degrees rowing a barbell to the lower abdomen, flat arched back
 
@@ -368,15 +388,16 @@ Exercise: man bent over at 45 degrees rowing a barbell to the lower abdomen, fla
 ЧТО:   Фермерская прогулка
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man walking forward carrying heavy dumbbells at his sides, upright torso
 
@@ -386,15 +407,16 @@ Exercise: man walking forward carrying heavy dumbbells at his sides, upright tor
 ЧТО:   Французский жим гантелью из-за головы
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man seated pressing one dumbbell overhead behind the head with both hands, elbows pointing up
 
@@ -404,15 +426,16 @@ Exercise: man seated pressing one dumbbell overhead behind the head with both ha
 ЧТО:   Шраги с гантелями
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man standing holding heavy dumbbells at his sides, shoulders shrugged straight up
 
@@ -427,15 +450,16 @@ Exercise: man standing holding heavy dumbbells at his sides, shoulders shrugged 
 ЧТО:   Подъём на носки сидя
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man on a seated calf raise machine, knees under the pads, heels lifted
 
@@ -445,15 +469,16 @@ Exercise: man on a seated calf raise machine, knees under the pads, heels lifted
 ЧТО:   Подъём на носки стоя
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man on a standing calf raise machine, heels lifted high on the platform edge
 
@@ -463,15 +488,16 @@ Exercise: man on a standing calf raise machine, heels lifted high on the platfor
 ЧТО:   Разведение гантелей в наклоне
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man bent forward raising two light dumbbells out to the sides, back flat
 
@@ -481,15 +507,16 @@ Exercise: man bent forward raising two light dumbbells out to the sides, back fl
 ЧТО:   Сведения в кроссовере
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man standing between two cable towers bringing the handles together in front of the chest
 
@@ -499,15 +526,16 @@ Exercise: man standing between two cable towers bringing the handles together in
 ЧТО:   Тяга к лицу
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man pulling a rope attachment toward the face at a cable machine, elbows high
 
@@ -522,15 +550,16 @@ Exercise: man pulling a rope attachment toward the face at a cable machine, elbo
 ЧТО:   Арнольд-жим
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man seated performing an arnold press, dumbbells rotating from front to overhead
 
@@ -540,15 +569,16 @@ Exercise: man seated performing an arnold press, dumbbells rotating from front t
 ЧТО:   Болгарский присед с гантелями
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man in a bulgarian split squat, rear foot on a bench, dumbbells at his sides, short range
 
@@ -558,15 +588,16 @@ Exercise: man in a bulgarian split squat, rear foot on a bench, dumbbells at his
 ЧТО:   Болгарский присед с гантелями
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man in a split squat holding dumbbells, short controlled range of motion
 
@@ -576,15 +607,16 @@ Exercise: man in a split squat holding dumbbells, short controlled range of moti
 ЧТО:   Гакк-присед до параллели
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man on a hack squat machine descending to parallel depth only
 
@@ -594,15 +626,16 @@ Exercise: man on a hack squat machine descending to parallel depth only
 ЧТО:   Гакк-присед до параллели
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man on a hack squat machine at parallel depth, thighs level with the floor
 
@@ -612,15 +645,16 @@ Exercise: man on a hack squat machine at parallel depth, thighs level with the f
 ЧТО:   Гоблет-присед до ящика
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man holding one dumbbell at the chest squatting down to a box at parallel depth
 
@@ -630,15 +664,16 @@ Exercise: man holding one dumbbell at the chest squatting down to a box at paral
 ЧТО:   Жим в наклонной раме
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man pressing a barbell loaded in a landmine attachment at a diagonal angle
 
@@ -648,15 +683,16 @@ Exercise: man pressing a barbell loaded in a landmine attachment at a diagonal a
 ЧТО:   Жим в наклонном тренажёре
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man seated in an incline chest press machine pushing upward
 
@@ -666,15 +702,16 @@ Exercise: man seated in an incline chest press machine pushing upward
 ЧТО:   Жим в тренажёре сидя
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man seated in a chest press machine pushing the handles forward
 
@@ -684,15 +721,16 @@ Exercise: man seated in a chest press machine pushing the handles forward
 ЧТО:   Жим ногами до 90°
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man on a leg press machine, knees bent to ninety degrees, feet mid platform
 
@@ -702,15 +740,16 @@ Exercise: man on a leg press machine, knees bent to ninety degrees, feet mid pla
 ЧТО:   Жим ногами одной ногой
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man on a leg press machine pressing with one leg only
 
@@ -720,15 +759,16 @@ Exercise: man on a leg press machine pressing with one leg only
 ЧТО:   Жим плечами в тренажёре
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man seated in a shoulder press machine pressing the handles overhead
 
@@ -738,15 +778,16 @@ Exercise: man seated in a shoulder press machine pressing the handles overhead
 ЧТО:   Жим штанги лёжа
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man lying on a flat bench pressing a barbell, spotter arms visible
 
@@ -756,15 +797,16 @@ Exercise: man lying on a flat bench pressing a barbell, spotter arms visible
 ЧТО:   Жим штанги на наклонной
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man on a thirty degree incline bench pressing a barbell
 
@@ -774,15 +816,16 @@ Exercise: man on a thirty degree incline bench pressing a barbell
 ЧТО:   Жим штанги сидя
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man seated pressing a barbell overhead from the front, back supported
 
@@ -792,15 +835,16 @@ Exercise: man seated pressing a barbell overhead from the front, back supported
 ЧТО:   Махи в тренажёре
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man seated in a lateral raise machine, arms lifting the pads outward
 
@@ -810,15 +854,16 @@ Exercise: man seated in a lateral raise machine, arms lifting the pads outward
 ЧТО:   Махи лёжа на наклонной скамье
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man lying sideways on an incline bench raising one dumbbell to the side
 
@@ -828,15 +873,16 @@ Exercise: man lying sideways on an incline bench raising one dumbbell to the sid
 ЧТО:   Махи на блоке одной рукой
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man standing performing a single arm lateral raise on a low cable pulley
 
@@ -846,15 +892,16 @@ Exercise: man standing performing a single arm lateral raise on a low cable pull
 ЧТО:   Молот на блоке с канатом
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man performing a rope hammer curl on a low cable pulley
 
@@ -864,15 +911,16 @@ Exercise: man performing a rope hammer curl on a low cable pulley
 ЧТО:   Наклонная скамья 45°
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man on a forty five degree back extension bench rising to a straight line
 
@@ -882,15 +930,16 @@ Exercise: man on a forty five degree back extension bench rising to a straight l
 ЧТО:   Наклоны со штангой
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man with a barbell on his back hinging forward at the hips, back flat
 
@@ -900,15 +949,16 @@ Exercise: man with a barbell on his back hinging forward at the hips, back flat
 ЧТО:   Обратная гиперэкстензия
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man on a reverse hyperextension machine, legs swinging up behind
 
@@ -918,15 +968,16 @@ Exercise: man on a reverse hyperextension machine, legs swinging up behind
 ЧТО:   Отжимания на брусьях с весом
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man on parallel bars lowering himself, weight belt with a plate hanging
 
@@ -936,15 +987,16 @@ Exercise: man on parallel bars lowering himself, weight belt with a plate hangin
 ЧТО:   Отжимания на брусьях узко
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man on narrow parallel bars keeping the torso vertical, elbows tight
 
@@ -954,15 +1006,16 @@ Exercise: man on narrow parallel bars keeping the torso vertical, elbows tight
 ЧТО:   Подтягивания в гравитроне
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man using an assisted pull-up machine, knees on the counterweight pad
 
@@ -972,15 +1025,16 @@ Exercise: man using an assisted pull-up machine, knees on the counterweight pad
 ЧТО:   Подтягивания нейтральным хватом
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man pulling up on parallel neutral grip handles, palms facing each other
 
@@ -990,15 +1044,16 @@ Exercise: man pulling up on parallel neutral grip handles, palms facing each oth
 ЧТО:   Прогулка с одной гантелью
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man walking forward carrying a single heavy dumbbell in one hand, torso upright
 
@@ -1008,15 +1063,16 @@ Exercise: man walking forward carrying a single heavy dumbbell in one hand, tors
 ЧТО:   Прогулка с трэп-баром
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man walking forward carrying a loaded trap bar at his sides
 
@@ -1026,15 +1082,16 @@ Exercise: man walking forward carrying a loaded trap bar at his sides
 ЧТО:   Пуловер на блоке
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man standing at a high cable pulley performing a straight arm pullover
 
@@ -1044,15 +1101,16 @@ Exercise: man standing at a high cable pulley performing a straight arm pullover
 ЧТО:   Разведение в кроссовере
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man standing between two cable towers pulling the handles apart behind him
 
@@ -1062,15 +1120,16 @@ Exercise: man standing between two cable towers pulling the handles apart behind
 ЧТО:   Разгибания на блоке из-за головы
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man performing an overhead rope triceps extension facing away from a cable machine
 
@@ -1080,15 +1139,16 @@ Exercise: man performing an overhead rope triceps extension facing away from a c
 ЧТО:   Разгибания на блоке из-за головы
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man performing an overhead rope triceps extension, elbows high and still
 
@@ -1098,15 +1158,16 @@ Exercise: man performing an overhead rope triceps extension, elbows high and sti
 ЧТО:   Румынская тяга с гантелями
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man performing a romanian deadlift with two dumbbells, hips back, bar path along the thighs
 
@@ -1116,15 +1177,16 @@ Exercise: man performing a romanian deadlift with two dumbbells, hips back, bar 
 ЧТО:   Сгибание ног сидя
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man in a seated leg curl machine curling the pads down
 
@@ -1134,15 +1196,16 @@ Exercise: man in a seated leg curl machine curling the pads down
 ЧТО:   Сгибание ноги стоя в тренажёре
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man at a standing single leg curl machine, one knee flexed
 
@@ -1152,15 +1215,16 @@ Exercise: man at a standing single leg curl machine, one knee flexed
 ЧТО:   Сгибание одной ногой
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man on a lying leg curl machine using only one leg
 
@@ -1170,15 +1234,16 @@ Exercise: man on a lying leg curl machine using only one leg
 ЧТО:   Сгибания на нижнем блоке
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man standing curling a straight bar on a low cable pulley
 
@@ -1188,15 +1253,16 @@ Exercise: man standing curling a straight bar on a low cable pulley
 ЧТО:   Сгибания на скамье Скотта
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man seated at a preacher bench curling an EZ bar
 
@@ -1206,15 +1272,16 @@ Exercise: man seated at a preacher bench curling an EZ bar
 ЧТО:   Сгибания на скамье Скотта с EZ
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man seated at a preacher bench curling an EZ bar, upper arms on the pad
 
@@ -1224,15 +1291,16 @@ Exercise: man seated at a preacher bench curling an EZ bar, upper arms on the pa
 ЧТО:   Сгибания с гантелями
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man standing curling dumbbells one arm at a time
 
@@ -1242,15 +1310,16 @@ Exercise: man standing curling dumbbells one arm at a time
 ЧТО:   Сгибания с гантелями с супинацией
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man standing curling two dumbbells with supinated grip
 
@@ -1260,15 +1329,16 @@ Exercise: man standing curling two dumbbells with supinated grip
 ЧТО:   Скручивание на палке
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man holding a wrist roller device at arms length, rope winding a small plate
 
@@ -1278,15 +1348,16 @@ Exercise: man holding a wrist roller device at arms length, rope winding a small
 ЧТО:   Становая с гантелями по бокам
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man deadlifting two heavy dumbbells held at his sides, flat back
 
@@ -1296,15 +1367,16 @@ Exercise: man deadlifting two heavy dumbbells held at his sides, flat back
 ЧТО:   Только обратные сгибания
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: close view of forearms on a bench performing reverse wrist curls with a light bar
 
@@ -1314,15 +1386,16 @@ Exercise: close view of forearms on a bench performing reverse wrist curls with 
 ЧТО:   Тяга Т-грифа
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man rowing a t-bar row machine with a chest pad, neutral grip
 
@@ -1332,15 +1405,16 @@ Exercise: man rowing a t-bar row machine with a chest pad, neutral grip
 ЧТО:   Тяга блока нейтральной рукоятью
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man at a lat pulldown machine pulling a neutral grip handle to the chest
 
@@ -1350,15 +1424,16 @@ Exercise: man at a lat pulldown machine pulling a neutral grip handle to the che
 ЧТО:   Тяга блока узким хватом
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man at a lat pulldown machine using a close neutral grip handle
 
@@ -1368,15 +1443,16 @@ Exercise: man at a lat pulldown machine using a close neutral grip handle
 ЧТО:   Тяга в тренажёре
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man seated in a rowing machine pulling the handles toward the waist
 
@@ -1386,15 +1462,16 @@ Exercise: man seated in a rowing machine pulling the handles toward the waist
 ЧТО:   Тяга в тренажёре с упором в грудь
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man seated at a chest supported row machine pulling the handles back
 
@@ -1404,15 +1481,16 @@ Exercise: man seated at a chest supported row machine pulling the handles back
 ЧТО:   Тяга гантели одной рукой
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man with one knee on a bench rowing a single dumbbell to the hip
 
@@ -1422,15 +1500,16 @@ Exercise: man with one knee on a bench rowing a single dumbbell to the hip
 ЧТО:   Тяга гантели одной рукой
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man with one knee on a bench rowing a single heavy dumbbell
 
@@ -1440,15 +1519,16 @@ Exercise: man with one knee on a bench rowing a single heavy dumbbell
 ЧТО:   Тяга с плинтов
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man pulling a barbell from pins set just below the knees inside a power rack
 
@@ -1458,15 +1538,16 @@ Exercise: man pulling a barbell from pins set just below the knees inside a powe
 ЧТО:   Тяга с упором в грудь
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man face down on an incline bench rowing two dumbbells
 
@@ -1476,15 +1557,16 @@ Exercise: man face down on an incline bench rowing two dumbbells
 ЧТО:   Французский жим с EZ-грифом
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man lying on a bench lowering an EZ bar toward the forehead, elbows fixed
 
@@ -1494,15 +1576,16 @@ Exercise: man lying on a bench lowering an EZ bar toward the forehead, elbows fi
 ЧТО:   Шраги в тренажёре
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man in a shrug machine lifting the handles straight up
 
@@ -1512,15 +1595,16 @@ Exercise: man in a shrug machine lifting the handles straight up
 ЧТО:   Шраги с трэп-баром
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man standing inside a trap bar shrugging the shoulders up
 
@@ -1530,15 +1614,16 @@ Exercise: man standing inside a trap bar shrugging the shoulders up
 ЧТО:   Шраги со штангой
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man standing holding a heavy barbell in front of the thighs, shoulders shrugged up
 
@@ -1548,15 +1633,16 @@ Exercise: man standing holding a heavy barbell in front of the thighs, shoulders
 ЧТО:   Ягодичный мост со штангой
 ──────────────────────────────────────────────────────────────────────
 
-Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
-Background: near-black #08090C, empty, no clutter, no windows, no other people.
-Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
-Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
-Equipment: matte black, modern, no brand marks.
-Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
-Composition: subject centred, generous empty space around him, square 1:1 crop.
-No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
-Keep the same man, the same clothes, the same lighting and the same background in every image.
+Minimal dark illustration of an anonymous human silhouette performing a gym exercise.
+The person is ALWAYS a clean faceless silhouette: no face, no facial features, no hair detail, no skin texture, no clothing folds — just a solid dark athletic shape.
+Background: near-black #08090C, completely empty, no floor line, no walls, no other objects.
+Lighting: bright blue rim light #2E7CF6 tracing the outline of the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Equipment: simplified matte black gym equipment, also outlined with the same blue rim light.
+Camera: strict side view, the whole figure and the equipment fully inside the frame.
+Composition: centred, generous empty space around, square 1:1 crop.
+Silhouette must stay readable: if the shape merges with the background, add a subtle dark blue fill inside it.
+No text, no numbers, no watermark, no logos, no faces, no other people.
+Same silhouette style, same blue light and same background in every image.
 
 Exercise: man with upper back on a bench thrusting a barbell across the hips, glutes locked out
 
