@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap">
+  <style>
+    body { margin: 0; background: #0B0B0C; color: #F2F2F0;
+           font-family: 'Golos Text', system-ui, sans-serif;
+           -webkit-font-smoothing: antialiased;
+           --acc: #4CC3FF; --acc-ink: #04141C; }
+    a { color: var(--acc); }
+    a:hover { color: #FFFFFF; }
+    .acc    { color: var(--acc); }
+    .acc-bg { background: var(--acc); color: var(--acc-ink); }
+    .tab-on { border-top: 2px solid var(--acc); color: var(--acc); }
+  </style>
+</helmet>
+<div style="width: 390px; height: 844px; display: flex; flex-direction: column; background: #0B0B0C; overflow: hidden; --acc: {{accent}};">
+
+  <div style="display: flex; justify-content: space-between; align-items: baseline; padding: 28px 20px 0;">
+    <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 700; letter-spacing: 0.22em; color: #52525A;">ДНЕВНИК</div>
+    <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 0.16em; color: #52525A;">НЕД 03 · ЦИКЛ 01</div>
+  </div>
+
+  <div style="padding: 24px 20px 0;">
+    <div class="acc" style="font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 700; letter-spacing: 0.22em; margin-bottom: 12px;">СЛЕДУЮЩАЯ</div>
+    <div style="display: flex; align-items: flex-end; gap: 16px;">
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 86px; font-weight: 700; line-height: 0.78; letter-spacing: -0.07em;">A</div>
+      <div style="padding-bottom: 6px; font-size: 18px; font-weight: 600; line-height: 1.2; color: #D6D6D2;">Задняя цепь<br>и грудь</div>
+    </div>
+    <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.08em; color: #7C7C84; margin-top: 16px;">7 УПРАЖНЕНИЙ · ОКОЛО 65 МИН</div>
+  </div>
+
+  <div style="display: grid; grid-template-columns: 20px minmax(0, 1fr) 64px 56px; gap: 10px; padding: 18px 20px 7px; border-bottom: 1px solid #2B2B30;">
+    <span></span>
+    <span style="font-family: 'JetBrains Mono', monospace; font-size: 9px; font-weight: 500; letter-spacing: 0.14em; color: #52525A;">УПРАЖНЕНИЕ</span>
+    <span style="font-family: 'JetBrains Mono', monospace; font-size: 9px; font-weight: 500; letter-spacing: 0.14em; color: #52525A; text-align: right;">ПОДХ×ПОВТ</span>
+    <span style="font-family: 'JetBrains Mono', monospace; font-size: 9px; font-weight: 500; letter-spacing: 0.14em; color: #52525A; text-align: right;">ВЕС</span>
+  </div>
+
+  <div style="flex: 1; min-height: 0;">
+    <sc-for list="{{exercises}}" as="ex" hint-placeholder-count="7">
+      <div style="display: grid; grid-template-columns: 20px minmax(0, 1fr) 64px 56px; gap: 10px; align-items: center; padding: 0 20px; height: 46px; border-bottom: 1px solid #18181B;">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; color: #45454B;">{{ex.no}}</div>
+        <div style="min-width: 0; font-size: 14px; color: #C8C8C4; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">{{ex.name}}</div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 500; color: #9A9AA0; text-align: right;">{{ex.sets}}</div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 700; color: #F2F2F0; text-align: right;">{{ex.kg}}</div>
+      </div>
+    </sc-for>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid #2B2B30;">
+    <div style="padding: 13px 20px; border-right: 1px solid #18181B;">
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 9px; font-weight: 500; letter-spacing: 0.14em; color: #52525A;">ВЕС ТЕЛА</div>
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 22px; font-weight: 700; margin-top: 4px; letter-spacing: -0.03em;">67,4</div>
+    </div>
+    <div style="padding: 13px 16px; border-right: 1px solid #18181B;">
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 9px; font-weight: 500; letter-spacing: 0.14em; color: #52525A;">СРЕДН 7Д</div>
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 22px; font-weight: 700; margin-top: 4px; letter-spacing: -0.03em; color: #C8C8C4;">67,1</div>
+    </div>
+    <div style="padding: 13px 16px;">
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 9px; font-weight: 500; letter-spacing: 0.14em; color: #52525A;">ПЕРЕРЫВ</div>
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 22px; font-weight: 700; margin-top: 4px; letter-spacing: -0.03em; color: #C8C8C4;">3 дн</div>
+    </div>
+  </div>
+
+  <div style="padding: 16px 20px 14px;">
+    <button class="acc-bg" style="width: 100%; height: 72px; border: 0; border-radius: 0; font-family: 'JetBrains Mono', monospace; font-size: 16px; font-weight: 700; letter-spacing: 0.16em; cursor: pointer;">НАЧАТЬ ТРЕНИРОВКУ</button>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid #2B2B30;">
+    <div class="tab-on" style="height: 56px; display: flex; align-items: center; justify-content: center; margin-top: -1px;">
+      <span style="font-family: 'JetBrains Mono', monospace; font-size: 9px; font-weight: 700; letter-spacing: 0.14em;">ГЛАВНАЯ</span>
+    </div>
+    <div style="height: 56px; display: flex; align-items: center; justify-content: center;">
+      <span style="font-family: 'JetBrains Mono', monospace; font-size: 9px; font-weight: 500; letter-spacing: 0.14em; color: #52525A;">ЗАНЯТИЕ</span>
+    </div>
+    <div style="height: 56px; display: flex; align-items: center; justify-content: center;">
+      <span style="font-family: 'JetBrains Mono', monospace; font-size: 9px; font-weight: 500; letter-spacing: 0.14em; color: #52525A;">ПРОГРЕСС</span>
+    </div>
+    <div style="height: 56px; display: flex; align-items: center; justify-content: center;">
+      <span style="font-family: 'JetBrains Mono', monospace; font-size: 9px; font-weight: 500; letter-spacing: 0.14em; color: #52525A;">НАСТРОЙКИ</span>
+    </div>
+  </div>
+
+</div>
+</x-dc>
+<script data-dc-script data-props='{"$preview":{"width":390,"height":844},"accent":{"editor":"color","default":"#4CC3FF","options":["#4CC3FF","#3B7BFF","#8B7BFF","#D7DEE6"]}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      accent: this.props.accent || '#4CC3FF',
+      exercises: [
+        { no: '01', name: 'Становая с трэп-бара',    sets: '4 × 5',  kg: '70' },
+        { no: '02', name: 'Жим гантелей лёжа',       sets: '4 × 8',  kg: '26' },
+        { no: '03', name: 'Тяга штанги в наклоне',   sets: '4 × 8',  kg: '50' },
+        { no: '04', name: 'Сгибание ног лёжа',       sets: '3 × 10', kg: '25' },
+        { no: '05', name: 'Махи гантелей в стороны', sets: '4 × 12', kg: '8' },
+        { no: '06', name: 'Молотковые сгибания',     sets: '3 × 10', kg: '10' },
+        { no: '07', name: 'Сгибания запястий',       sets: '4 × 15', kg: '5' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

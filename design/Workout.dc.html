@@ -1,0 +1,263 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap">
+  <style>
+    body { margin: 0; background: #0B0B0C; color: #F2F2F0;
+           font-family: 'Golos Text', system-ui, sans-serif;
+           -webkit-font-smoothing: antialiased;
+           --acc: #4CC3FF; --acc-ink: #04141C; }
+    a { color: var(--acc); }
+    a:hover { color: #FFFFFF; }
+
+    .acc    { color: var(--acc); }
+    .acc-bg { background: var(--acc); color: var(--acc-ink); }
+
+    .rir { height: 58px; border: 1px solid #35353A; background: transparent; color: #C8C8C4;
+           font-family: 'JetBrains Mono', monospace; font-size: 18px; font-weight: 500;
+           border-radius: 0; cursor: pointer; }
+    .rir-on { height: 58px; border: 1px solid var(--acc); background: var(--acc); color: var(--acc-ink);
+              font-family: 'JetBrains Mono', monospace; font-size: 18px; font-weight: 700;
+              border-radius: 0; cursor: pointer; }
+
+    .tick-on  { flex: 1; height: 10px; background: var(--acc); }
+    .tick-off { flex: 1; height: 10px; background: #202024; }
+
+    .big { font-family: 'JetBrains Mono', monospace; font-size: 82px; font-weight: 700;
+           line-height: 0.9; letter-spacing: -0.06em; }
+    .unit { font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 500;
+            letter-spacing: 0.2em; color: #7C7C84; margin-top: 12px; }
+    .card { flex: 1; min-height: 0; margin: 20px 20px 0; border: 1px solid #2B2B30;
+            background: #101013; display: flex; flex-direction: column; }
+    .card-head { padding: 13px 16px; border-bottom: 1px solid #202024;
+                 display: flex; justify-content: space-between; align-items: baseline; }
+    .card-foot { padding: 14px 16px; border-top: 1px solid #202024; text-align: center; }
+    .label { font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700;
+             letter-spacing: 0.16em; }
+    .sub { font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 500;
+           letter-spacing: 0.12em; color: #52525A; }
+    .primary { width: 100%; height: 76px; border: 0; border-radius: 0;
+               font-family: 'JetBrains Mono', monospace; font-size: 17px; font-weight: 700;
+               letter-spacing: 0.16em; cursor: pointer; }
+    .ghost { width: 100%; height: 46px; background: transparent; border: 0;
+             font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 500;
+             letter-spacing: 0.1em; color: #7C7C84; cursor: pointer; }
+  </style>
+</helmet>
+<div style="width: 390px; height: 844px; display: flex; flex-direction: column; background: #0B0B0C; overflow: hidden; --acc: {{accent}};">
+
+  <div style="display: flex; justify-content: space-between; align-items: baseline; padding: 28px 20px 0;">
+    <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 0.18em; color: #52525A;">УПРАЖНЕНИЕ 3 ИЗ 7</div>
+    <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 0.12em; color: #7C7C84;">ПРОПУСТИТЬ</div>
+  </div>
+
+  <div style="display: flex; align-items: center; gap: 10px; padding: 14px 20px 0;">
+    <div style="flex: 1; min-width: 0; font-size: 24px; font-weight: 600; line-height: 1.12; letter-spacing: -0.015em;">{{title}}</div>
+    <div style="flex: none; width: 36px; height: 36px; border: 1px solid #35353A; display: flex; align-items: center; justify-content: center; font-family: 'JetBrains Mono', monospace; font-size: 14px; color: #7C7C84;">?</div>
+  </div>
+
+  <sc-if value="{{lifting}}" hint-placeholder-val="{{true}}">
+    <div class="card">
+      <div class="card-head">
+        <span class="acc label">{{cardLabel}}</span>
+        <span class="sub">{{cardNote}}</span>
+      </div>
+      <div style="flex: 1; display: flex; align-items: center;">
+        <div style="flex: 1; text-align: center; padding: 0 8px;">
+          <div class="big">{{weight}}</div>
+          <div class="unit">КИЛОГРАММОВ</div>
+        </div>
+        <div style="width: 1px; align-self: stretch; background: #202024;"></div>
+        <div style="flex: 1; text-align: center; padding: 0 8px;">
+          <div class="big">{{reps}}</div>
+          <div class="unit">ПОВТОРОВ</div>
+        </div>
+      </div>
+      <div class="card-foot">
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 500; letter-spacing: 0.1em; color: #7C7C84;">{{footLabel}}</span>
+      </div>
+    </div>
+
+    <div style="padding: 16px 20px 0;">
+      <button class="primary acc-bg" onClick="{{doneSet}}">ВЫПОЛНИЛ</button>
+      <button class="ghost" onClick="{{secondary}}">{{secondaryLabel}}</button>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{resting}}" hint-placeholder-val="{{false}}">
+    <div class="card">
+      <div class="card-head">
+        <span class="acc label">{{restTitle}}</span>
+        <span class="sub">ПОДХОД {{setNo}} ЗАПИСАН</span>
+      </div>
+      <div style="flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0 16px;">
+        <div class="acc" style="font-family: 'JetBrains Mono', monospace; font-size: 84px; font-weight: 700; line-height: 0.95; letter-spacing: -0.05em; text-align: center;">{{clock}}</div>
+        <div style="display: flex; gap: 3px; margin-top: 22px;">
+          <sc-for list="{{bars}}" as="b" hint-placeholder-count="18">
+            <div class="{{b.cls}}"></div>
+          </sc-for>
+        </div>
+      </div>
+      <div style="padding: 14px 16px; border-top: 1px solid #202024;">
+        <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 9px;">
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 0.18em; color: #7C7C84;">МОГ БЫ СДЕЛАТЬ ЕЩЁ</span>
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 0.14em; color: #52525A;">ПОВТОРОВ</span>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 7px;">
+          <sc-for list="{{rirs}}" as="r" hint-placeholder-count="4">
+            <button class="{{r.cls}}" onClick="{{r.pick}}">{{r.label}}</button>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 132px minmax(0, 1fr); gap: 10px; padding: 16px 20px 0;">
+      <button style="height: 76px; border: 1px solid #35353A; background: transparent; color: #F2F2F0; font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 500; letter-spacing: 0.08em; border-radius: 0; cursor: pointer;" onClick="{{addTime}}">+30 СЕК</button>
+      <button class="acc-bg" style="height: 76px; border: 0; border-radius: 0; font-family: 'JetBrains Mono', monospace; font-size: 15px; font-weight: 700; letter-spacing: 0.12em; cursor: pointer;" onClick="{{next}}">{{nextLabel}}</button>
+    </div>
+    <div style="height: 46px;"></div>
+  </sc-if>
+
+  <sc-if value="{{finished}}" hint-placeholder-val="{{false}}">
+    <div class="card" style="align-items: center; justify-content: center; gap: 10px;">
+      <div class="acc" style="font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 700; letter-spacing: 0.2em;">УПРАЖНЕНИЕ ЗАКРЫТО</div>
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 15px; color: #7C7C84;">4 подхода · 50 кг</div>
+    </div>
+    <div style="padding: 16px 20px 0;">
+      <button class="primary acc-bg" style="font-size: 15px; letter-spacing: 0.12em;" onClick="{{restart}}">СЛЕДУЮЩЕЕ УПРАЖНЕНИЕ</button>
+      <button class="ghost" style="color: #52525A;" onClick="{{restart}}">пройти заново</button>
+    </div>
+  </sc-if>
+
+  <div style="border-top: 1px solid #2B2B30; display: flex; align-items: center; gap: 12px; padding: 0 20px; height: 52px; margin-top: 16px;">
+    <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 0.14em; color: #52525A; flex: none; width: 92px;">ПРОШЛЫЙ РАЗ</div>
+    <div style="flex: 1; min-width: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #C8C8C4;">45 кг · 8 8 7 7</div>
+  </div>
+
+</div>
+</x-dc>
+<script data-dc-script data-props='{"$preview":{"width":390,"height":844},"accent":{"editor":"color","default":"#4CC3FF","options":["#4CC3FF","#3B7BFF","#8B7BFF","#D7DEE6"]}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = {
+      // work → pair → rest → work … → done
+      phase: 'work',
+      setNo: 3,
+      sets: 4,
+      weight: 50,
+      target: 8,
+      doneReps: 8,
+      rir: null,
+      rest: 0,
+      restTotal: 120
+    };
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.timer);
+  }
+
+  runTimer() {
+    clearInterval(this.timer);
+    this.timer = setInterval(() => {
+      const left = this.state.rest - 1;
+      if (left <= 0) {
+        clearInterval(this.timer);
+        this.setState({ rest: 0 });
+      } else {
+        this.setState({ rest: left });
+      }
+    }, 1000);
+  }
+
+  renderVals() {
+    const s = this.state;
+    const two = (n) => (n < 10 ? '0' + n : '' + n);
+    const left = s.sets - s.setNo;
+
+    const plural = (n) => {
+      const d10 = n % 10, d100 = n % 100;
+      if (d10 === 1 && d100 !== 11) return 'ПОДХОД';
+      if (d10 >= 2 && d10 <= 4 && (d100 < 12 || d100 > 14)) return 'ПОДХОДА';
+      return 'ПОДХОДОВ';
+    };
+
+    const count = 18;
+    const filled = s.restTotal > 0 ? Math.round((s.rest / s.restTotal) * count) : 0;
+    const bars = [];
+    for (let i = 0; i < count; i++) bars.push({ cls: i < filled ? 'tick-on' : 'tick-off' });
+
+    const rirs = [0, 1, 2, 3].map((v) => ({
+      label: v === 3 ? '3+' : '' + v,
+      cls: s.rir === v ? 'rir-on' : 'rir',
+      pick: () => this.setState({ rir: v })
+    }));
+
+    const pair = s.phase === 'pair';
+
+    return {
+      accent: this.props.accent || '#4CC3FF',
+      lifting: s.phase === 'work' || pair,
+      resting: s.phase === 'rest',
+      finished: s.phase === 'done',
+
+      title: pair ? 'Задняя дельта в тренажёре' : 'Тяга штанги в наклоне',
+      cardLabel: pair ? 'СВЯЗКА · БЕЗ ОТДЫХА' : 'ПОДХОД ' + s.setNo + ' ИЗ ' + s.sets,
+      cardNote: pair ? 'ПОСЛЕ ПОДХОДА ' + s.setNo : '',
+      weight: pair ? 25 : s.weight,
+      reps: pair ? 15 : s.target,
+      footLabel: pair
+        ? 'СРАЗУ, НЕ ОТДЫХАЯ'
+        : (left > 0 ? 'ОСТАЛОСЬ ЕЩЁ ' + left + ' ' + plural(left) : 'ЭТОТ ПОДХОД ПОСЛЕДНИЙ'),
+      secondaryLabel: pair ? 'ПРОПУСТИТЬ СВЯЗКУ' : 'СДЕЛАЛ МЕНЬШЕ — ' + s.doneReps + ' ПОВТ',
+
+      setNo: s.setNo,
+      clock: two(Math.floor(s.rest / 60)) + ':' + two(s.rest % 60),
+      restTitle: s.rest > 0 ? 'ОТДЫХ' : 'ОТДЫХ ОКОНЧЕН',
+      bars: bars,
+      rirs: rirs,
+      nextLabel: s.setNo >= s.sets ? 'ЗАКОНЧИТЬ' : 'ПОДХОД ' + (s.setNo + 1),
+
+      doneSet: () => {
+        if (pair) {
+          this.setState({ phase: 'rest', rest: 120, restTotal: 120 });
+          this.runTimer();
+        } else {
+          this.setState({ phase: 'pair', doneReps: s.target, rir: null });
+        }
+      },
+      secondary: () => {
+        if (pair) {
+          this.setState({ phase: 'rest', rest: 120, restTotal: 120 });
+          this.runTimer();
+        } else {
+          this.setState({ doneReps: Math.max(1, s.doneReps - 1) });
+        }
+      },
+      addTime: () => {
+        const l = s.rest + 30;
+        this.setState({ rest: l, restTotal: Math.max(s.restTotal, l) });
+        this.runTimer();
+      },
+      next: () => {
+        clearInterval(this.timer);
+        if (s.setNo >= s.sets) this.setState({ phase: 'done', rest: 0 });
+        else this.setState({ phase: 'work', setNo: s.setNo + 1, rest: 0, doneReps: s.target });
+      },
+      restart: () => {
+        clearInterval(this.timer);
+        this.setState({ phase: 'work', setNo: 1, rest: 0, rir: null, doneReps: 8 });
+      }
+    };
+  }
+}
+</script>
+</body>
+</html>

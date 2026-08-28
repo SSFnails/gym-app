@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap">
+  <style>
+    body { margin: 0; background: #0B0B0C; color: #F2F2F0;
+           font-family: 'Golos Text', system-ui, sans-serif;
+           -webkit-font-smoothing: antialiased;
+           --acc: #4CC3FF; --acc-ink: #04141C; }
+    a { color: var(--acc); }
+    a:hover { color: #FFFFFF; }
+    .acc    { color: var(--acc); }
+    .acc-bg { background: var(--acc); color: var(--acc-ink); }
+    .acc-bd { border-color: var(--acc); }
+    .st-up   { color: #4FD18B; }
+    .st-hold { color: #7C7C84; }
+    .st-down { color: #FF4D6E; }
+    .bar-up   { background: #4FD18B; }
+    .bar-hold { background: #2B2B30; }
+    .bar-down { background: #FF4D6E; }
+  </style>
+</helmet>
+<div style="width: 390px; height: 844px; display: flex; flex-direction: column; background: #0B0B0C; overflow: hidden; --acc: {{accent}};">
+
+  <div style="display: flex; justify-content: space-between; align-items: baseline; padding: 30px 20px 0;">
+    <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 600; letter-spacing: 0.22em; color: #56565C;">ИТОГ</div>
+    <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 0.18em; color: #56565C;">ДЕНЬ A · НЕД 03</div>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); padding: 26px 20px 22px;">
+    <div>
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 9px; font-weight: 600; letter-spacing: 0.16em; color: #56565C;">ТОННАЖ</div>
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 34px; font-weight: 700; letter-spacing: -0.04em; line-height: 1.1; margin-top: 4px;">4280</div>
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; color: #56565C;">КГ</div>
+    </div>
+    <div>
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 9px; font-weight: 600; letter-spacing: 0.16em; color: #56565C;">ВРЕМЯ</div>
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 34px; font-weight: 700; letter-spacing: -0.04em; line-height: 1.1; margin-top: 4px;">68</div>
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; color: #56565C;">МИН</div>
+    </div>
+    <div>
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 9px; font-weight: 600; letter-spacing: 0.16em; color: #56565C;">ПОДХОДОВ</div>
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 34px; font-weight: 700; letter-spacing: -0.04em; line-height: 1.1; margin-top: 4px;">26</div>
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; color: #56565C;">ВСЕГО</div>
+    </div>
+  </div>
+
+  <div style="border-top: 1px solid #2B2B30; display: flex; justify-content: space-between; padding: 10px 20px 8px;">
+    <span style="font-family: 'JetBrains Mono', monospace; font-size: 9px; font-weight: 600; letter-spacing: 0.16em; color: #56565C;">УПРАЖНЕНИЕ</span>
+    <span style="font-family: 'JetBrains Mono', monospace; font-size: 9px; font-weight: 600; letter-spacing: 0.16em; color: #56565C;">СЛЕДУЮЩАЯ СЕССИЯ</span>
+  </div>
+
+  <div style="flex: 1; min-height: 0;">
+    <sc-for list="{{rows}}" as="r" hint-placeholder-count="7">
+      <div style="display: flex; height: 58px; border-top: 1px solid #18181B;">
+        <div class="{{r.bar}}" style="width: 3px; flex: none;"></div>
+        <div style="flex: 1; min-width: 0; display: flex; align-items: center; gap: 10px; padding: 0 20px 0 17px;">
+          <div style="flex: 1; min-width: 0;">
+            <div style="font-size: 13px; color: #C8C8C4; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">{{r.name}}</div>
+            <div class="{{r.cls}}" style="font-family: 'JetBrains Mono', monospace; font-size: 9px; font-weight: 600; letter-spacing: 0.14em; margin-top: 2px;">{{r.status}}</div>
+          </div>
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 600; flex: none; color: #F2F2F0;">{{r.next}}</div>
+        </div>
+      </div>
+    </sc-for>
+  </div>
+
+  <div style="border-top: 1px solid var(--acc); background: #0C1418; padding: 14px 20px; display: flex; gap: 12px; align-items: flex-start;">
+    <div style="font-family: 'JetBrains Mono', monospace; font-size: 15px; font-weight: 700; color: var(--acc); line-height: 1.2;">!</div>
+    <div style="flex: 1;">
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 9px; font-weight: 600; letter-spacing: 0.16em; color: var(--acc);">ЗАСТОЙ · МАХИ В СТОРОНЫ</div>
+      <div style="font-size: 13px; color: #C8C8C4; margin-top: 4px; line-height: 1.35;">Сумма повторов не растёт две сессии. Сними 10% и зайди заново.</div>
+    </div>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; padding: 14px 20px 20px;">
+    <button style="height: 68px; border: 1px solid #35353A; background: transparent; color: #F2F2F0; font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 600; letter-spacing: 0.08em; border-radius: 0; cursor: pointer;">СБРОСИТЬ −10%</button>
+    <button class="acc-bg" style="height: 68px; border: 0; font-family: 'JetBrains Mono', monospace; font-size: 15px; font-weight: 700; letter-spacing: 0.14em; border-radius: 0; cursor: pointer;">ГОТОВО</button>
+  </div>
+
+</div>
+</x-dc>
+<script data-dc-script data-props='{"$preview":{"width":390,"height":844},"accent":{"editor":"color","default":"#4CC3FF","options":["#4CC3FF","#3B7BFF","#8B7BFF","#D7DEE6"]}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      accent: this.props.accent || '#4CC3FF',
+      rows: [
+        { cls: 'st-up', bar: 'bar-up',   name: 'Становая с трэп-бара',    status: 'ПРИБАВКА',      next: '75 × 5' },
+        { cls: 'st-hold', bar: 'bar-hold', name: 'Жим гантелей лёжа',       status: 'БЕЗ ИЗМЕНЕНИЙ', next: '26 × 9' },
+        { cls: 'st-up', bar: 'bar-up',   name: 'Тяга штанги в наклоне',   status: 'ПРИБАВКА',      next: '52,5 × 8' },
+        { cls: 'st-hold', bar: 'bar-hold', name: 'Сгибание ног лёжа',       status: 'БЕЗ ИЗМЕНЕНИЙ', next: '25 × 12' },
+        { cls: 'st-down', bar: 'bar-down', name: 'Махи гантелей в стороны', status: 'ВЕС ВЗЯТ РАНО', next: '8 × 12' },
+        { cls: 'st-hold', bar: 'bar-hold', name: 'Молотковые сгибания',     status: 'БЕЗ ИЗМЕНЕНИЙ', next: '10 × 12' },
+        { cls: 'st-hold', bar: 'bar-hold', name: 'Сгибания запястий',       status: 'ВНЕ АЛГОРИТМА', next: '5 × 15' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

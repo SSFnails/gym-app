@@ -1,0 +1,9 @@
+node_modules
+dist
+dev-dist
+.DS_Store
+*.local
+
+# Собранный макет — артефакт, исходники рядом в .dc.html
+design/dnevnik-trenirovok.html
+design/collage*.html

@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap">
+  <style>
+    body { margin: 0; background: #0B0B0C; color: #F2F2F0;
+           font-family: 'Golos Text', system-ui, sans-serif;
+           -webkit-font-smoothing: antialiased;
+           --acc: #4CC3FF; --acc-ink: #04141C; }
+    a { color: var(--acc); }
+    a:hover { color: #FFFFFF; }
+
+    .acc    { color: var(--acc); }
+    .acc-bg { background: var(--acc); color: var(--acc-ink); }
+
+    .bar-on  { flex: 1; height: 26px; background: var(--acc); }
+    .bar-off { flex: 1; height: 26px; background: #202024; }
+
+    .rir { height: 58px; border: 1px solid #35353A; background: transparent; color: #C8C8C4;
+           font-family: 'JetBrains Mono', monospace; font-size: 18px; font-weight: 500;
+           border-radius: 0; cursor: pointer; }
+    .rir-on { height: 58px; border: 1px solid var(--acc); background: var(--acc); color: var(--acc-ink);
+              font-family: 'JetBrains Mono', monospace; font-size: 18px; font-weight: 700;
+              border-radius: 0; cursor: pointer; }
+  </style>
+</helmet>
+<div style="width: 390px; height: 844px; display: flex; flex-direction: column; background: #0B0B0C; overflow: hidden; --acc: {{accent}};">
+
+  <div style="display: flex; justify-content: space-between; align-items: baseline; padding: 28px 20px 0;">
+    <div class="acc" style="font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.2em;">{{title}}</div>
+    <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 0.14em; color: #52525A;">ТЯГА ШТАНГИ · 3 ИЗ 7</div>
+  </div>
+
+  <div style="flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0 20px;">
+    <div class="acc" style="font-family: 'JetBrains Mono', monospace; font-size: 124px; font-weight: 700; line-height: 0.9; letter-spacing: -0.07em; text-align: center;">{{clock}}</div>
+    <div style="display: flex; gap: 3px; margin-top: 30px;">
+      <sc-for list="{{bars}}" as="b" hint-placeholder-count="24">
+        <div class="{{b.cls}}"></div>
+      </sc-for>
+    </div>
+  </div>
+
+  <div style="border-top: 1px solid #2B2B30; padding: 16px 20px;">
+    <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 9px;">
+      <span style="font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 0.18em; color: #7C7C84;">МОГ БЫ СДЕЛАТЬ ЕЩЁ</span>
+      <span style="font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 0.14em; color: #52525A;">ПОВТОРОВ</span>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 7px;">
+      <sc-for list="{{rirs}}" as="r" hint-placeholder-count="4">
+        <button class="{{r.cls}}" onClick="{{r.pick}}">{{r.label}}</button>
+      </sc-for>
+    </div>
+  </div>
+
+  <div style="border-top: 1px solid #2B2B30; padding: 16px 20px; display: flex; align-items: flex-end; gap: 12px;">
+    <div>
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 0.18em; color: #52525A;">ДАЛЬШЕ · ПОДХОД 4 ИЗ 4</div>
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 34px; font-weight: 700; letter-spacing: -0.04em; line-height: 1.15; margin-top: 4px;">50 кг × 8</div>
+    </div>
+  </div>
+
+  <div style="display: grid; grid-template-columns: 132px minmax(0, 1fr); gap: 10px; padding: 0 20px 22px;">
+    <button style="height: 76px; border: 1px solid #35353A; background: transparent; color: #F2F2F0; font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 500; letter-spacing: 0.08em; border-radius: 0; cursor: pointer;" onClick="{{add}}">+30 СЕК</button>
+    <button class="acc-bg" style="height: 76px; border: 0; border-radius: 0; font-family: 'JetBrains Mono', monospace; font-size: 15px; font-weight: 700; letter-spacing: 0.12em; cursor: pointer;" onClick="{{skip}}">{{mainLabel}}</button>
+  </div>
+
+</div>
+</x-dc>
+<script data-dc-script data-props='{"$preview":{"width":390,"height":844},"accent":{"editor":"color","default":"#4CC3FF","options":["#4CC3FF","#3B7BFF","#8B7BFF","#D7DEE6"]}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { left: 9, total: 120, rir: null };
+  }
+
+  componentDidMount() {
+    this.run();
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.timer);
+  }
+
+  run() {
+    clearInterval(this.timer);
+    this.timer = setInterval(() => {
+      const left = this.state.left - 1;
+      if (left <= 0) {
+        clearInterval(this.timer);
+        this.setState({ left: 0 });
+      } else {
+        this.setState({ left: left });
+      }
+    }, 1000);
+  }
+
+  renderVals() {
+    const s = this.state;
+    const two = (n) => (n < 10 ? '0' + n : '' + n);
+    const over = s.left === 0;
+
+    const count = 24;
+    const filled = over ? 0 : Math.round((s.left / s.total) * count);
+    const bars = [];
+    for (let i = 0; i < count; i++) {
+      bars.push({ cls: i < filled ? 'bar-on' : 'bar-off' });
+    }
+
+    const rirs = [0, 1, 2, 3].map((v) => ({
+      label: v === 3 ? '3+' : '' + v,
+      cls: s.rir === v ? 'rir-on' : 'rir',
+      pick: () => this.setState({ rir: v })
+    }));
+
+    return {
+      accent: this.props.accent || '#4CC3FF',
+      title: over ? 'ОТДЫХ ОКОНЧЕН' : 'ОТДЫХ',
+      clock: two(Math.floor(s.left / 60)) + ':' + two(s.left % 60),
+      bars: bars,
+      rirs: rirs,
+      mainLabel: over ? 'ДАЛЬШЕ' : 'ПРОПУСТИТЬ',
+      add: () => {
+        const left = s.left + 30;
+        this.setState({ left: left, total: Math.max(s.total, left) });
+        this.run();
+      },
+      skip: () => { clearInterval(this.timer); this.setState({ left: 0 }); }
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,290 @@
+@import './fonts.css';
+
+/* ============================================================
+   Прибор, а не приложение. Прямые углы, хайрлайны во всю ширину,
+   моноширинные цифры (при смене значения они не прыгают).
+   Цвет: акцент — «сейчас, действуй»; зелёный и розовый — только
+   итог упражнения.
+   ============================================================ */
+
+:root {
+  --bg:        #0B0B0C;
+  --panel:     #101013;
+  --line:      #2B2B30;
+  --line-soft: #18181B;
+
+  --fg:   #F2F2F0;
+  --fg2:  #C8C8C4;
+  --mut:  #7C7C84;
+  --mut2: #52525A;
+
+  --acc:     #4CC3FF;
+  --acc-ink: #04141C;
+
+  --up:   #4FD18B;  /* прибавка */
+  --down: #FF4D6E;  /* откат */
+
+  --font-ui:   'Golos Text', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+
+  --tap:    56px;
+  --tap-lg: 76px;
+  --pad:    20px;
+  --tabbar-h: 56px;
+
+  --safe-top:    env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+
+html, body, #root { height: 100%; margin: 0; padding: 0; }
+
+html {
+  background: var(--bg);
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-ui);
+  font-size: 16px;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+
+  /* В зале: без случайного зума, выделения и pull-to-refresh посреди подхода. */
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  touch-action: manipulation;
+  overscroll-behavior: none;
+}
+
+input, textarea { -webkit-user-select: text; user-select: text; }
+
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+a { color: var(--acc); text-decoration: none; }
+h1, h2, h3, p { margin: 0; }
+
+/* ---------- Каркас ---------- */
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  overflow-x: clip;
+}
+
+.screen {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-top: calc(var(--safe-top) + 28px);
+}
+
+/* ---------- Типографика ---------- */
+
+.mono { font-family: var(--font-mono); }
+
+/* Микроподпись над значением: моно, капс, широкий трекинг. */
+.label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  color: var(--mut2);
+  text-transform: uppercase;
+}
+
+.label--acc { color: var(--acc); font-weight: 700; letter-spacing: 0.16em; }
+
+.unit {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  color: var(--mut);
+}
+
+/* Крупное число: моноширинное, чтобы не прыгало при смене. */
+.big {
+  font-family: var(--font-mono);
+  font-size: 82px;
+  font-weight: 700;
+  line-height: 0.9;
+  letter-spacing: -0.06em;
+}
+
+.title { font-size: 24px; font-weight: 600; line-height: 1.12; letter-spacing: -0.015em; }
+
+.muted { color: var(--mut); }
+.dim   { color: var(--mut2); }
+.acc   { color: var(--acc); }
+
+/* ---------- Панель ---------- */
+
+.panel {
+  border: 1px solid var(--line);
+  background: var(--panel);
+  display: flex;
+  flex-direction: column;
+}
+
+.panel__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+  padding: 13px 16px;
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.panel__foot {
+  padding: 14px 16px;
+  border-top: 1px solid var(--line-soft);
+  text-align: center;
+}
+
+/* ---------- Строки-хайрлайны ---------- */
+
+.hr { height: 1px; background: var(--line); }
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  min-height: 46px;
+  border-bottom: 1px solid var(--line-soft);
+  padding: 0 var(--pad);
+}
+
+.row > :first-child { min-width: 0; }
+
+.ellipsis { min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+/* ---------- Кнопки ---------- */
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  min-height: var(--tap);
+  padding: 0 16px;
+  font-family: var(--font-mono);
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  background: transparent;
+  color: var(--fg);
+  border: 1px solid var(--line);
+  transition: opacity 0.1s;
+}
+
+.btn:active { opacity: 0.7; }
+
+.btn--primary {
+  min-height: var(--tap-lg);
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  background: var(--acc);
+  color: var(--acc-ink);
+  border-color: var(--acc);
+}
+
+.btn--ghost {
+  min-height: 46px;
+  border: 0;
+  font-size: 12px;
+  color: var(--mut);
+  letter-spacing: 0.1em;
+}
+
+.btn:disabled { opacity: 0.35; }
+
+/* ---------- Нижняя навигация: только слова, без иконок ---------- */
+
+.tabbar {
+  flex: none;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-top: 1px solid var(--line);
+  padding-bottom: var(--safe-bottom);
+  background: var(--bg);
+}
+
+.tabbar__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  height: var(--tabbar-h);
+  margin-top: -1px;
+  border-top: 2px solid transparent;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  color: var(--mut2);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tabbar__item.is-active {
+  border-top-color: var(--acc);
+  color: var(--acc);
+  font-weight: 700;
+}
+
+.tabbar__item:active { opacity: 0.6; }
+
+/* ---------- Просмотр с компьютера: та же мобильная версия в рамке ---------- */
+
+@media (min-width: 760px) and (min-height: 720px) {
+  html { background: #050506; }
+
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 24px;
+  }
+
+  #root {
+    width: 390px;
+    height: min(844px, calc(100vh - 48px));
+    flex: none;
+    overflow: hidden;
+    background: var(--bg);
+    transform: translateZ(0);
+    box-shadow: 0 0 0 10px #131317, 0 0 0 11px #303038, 0 40px 90px rgba(0, 0, 0, 0.7);
+  }
+
+  .app { max-width: none; }
+  .screen::-webkit-scrollbar { width: 0; height: 0; }
+}
