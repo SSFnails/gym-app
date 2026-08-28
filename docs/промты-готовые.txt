@@ -1,0 +1,1562 @@
+ГОТОВЫЕ ПРОМТЫ ДЛЯ КАРТИНОК УПРАЖНЕНИЙ
+
+Как пользоваться:
+  1. Найди блок нужного упражнения.
+  2. Скопируй ВЕСЬ текст между линиями — он уже собран целиком.
+  3. Вставь в генератор, получи картинку.
+  4. Сохрани под именем, которое написано в заголовке блока.
+
+Один блок = одна картинка. Файл целиком отправлять не нужно.
+
+Порядок: сначала программа (то, что делаешь каждую тренировку),
+потом связки, потом замены. Первые двадцать с лишним — самые нужные,
+остальное можно не делать вовсе.
+
+Совет: сгенерируй первую, посмотри что вышло, покажи мне. Если стиль
+не тот — поправим общий блок до того, как ты нагенеришь сотню.
+
+
+
+######################################################################
+### ПРОГРАММА — делаешь на каждой тренировке
+######################################################################
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  hyperextension.png
+ЧТО:   Гиперэкстензия с весом
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man on a forty five degree back extension bench holding a weight plate at the chest
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  db-bench.png
+ЧТО:   Жим гантелей лёжа, полунейтральный
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man lying on a flat bench pressing two dumbbells, semi-neutral grip, elbows tucked
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  incline-db-press.png
+ЧТО:   Жим гантелей на наклонной 30°
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man on a thirty degree incline bench pressing two dumbbells
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  db-shoulder-press.png
+ЧТО:   Жим гантелей сидя, нейтральный хват
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man seated pressing two dumbbells overhead with neutral grip, back supported
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  leg-press.png
+ЧТО:   Жим ногами, средняя постановка
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man on an angled leg press machine, knees bent to ninety degrees only, lower back flat on the pad
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  rear-delt-machine.png
+ЧТО:   Задняя дельта в тренажёре
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man seated in a reverse pec deck machine, arms opening backward
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  lat-raise.png
+ЧТО:   Махи гантелей в стороны
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man standing raising two dumbbells out to the sides to shoulder height, elbows leading
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  hammer-curl.png
+ЧТО:   Молотковые сгибания
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man standing curling two dumbbells with neutral hammer grip
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  pullup.png
+ЧТО:   Подтягивания или тяга верхнего блока
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man hanging from a pull-up bar mid-rep, chin approaching the bar, back muscles engaged
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  box-squat.png
+ЧТО:   Присед со штангой до ящика
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man squatting with a barbell on his back down to a box at parallel depth, not below
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  triceps-rope.png
+ЧТО:   Разгибания на блоке, канат
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man standing pushing a rope attachment down on a cable machine, elbows pinned to sides
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  rdl.png
+ЧТО:   Румынская тяга со штангой
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man performing a romanian deadlift with a barbell, hips pushed back, bar sliding along the thighs, knees soft
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  leg-curl.png
+ЧТО:   Сгибание ног лёжа
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man lying prone on a lying leg curl machine, heels curled toward glutes
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  wrist-curl.png
+ЧТО:   Сгибания запястий + обратные
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: close view of forearms resting on a bench, light dumbbells, wrists curling
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  ez-curl.png
+ЧТО:   Сгибания с EZ-грифом
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man standing curling an EZ curl bar, elbows at the sides
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  deadlift-trap.png
+ЧТО:   Становая с трэп-бара
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man standing inside a hexagonal trap bar, mid-lift, neutral grip at sides, flat back, hips hinged
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  lat-pulldown.png
+ЧТО:   Тяга верхнего блока широким хватом
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man seated at a lat pulldown machine pulling a wide bar to the upper chest
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  seated-row.png
+ЧТО:   Тяга горизонтального блока, нейтральная рукоять
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man seated at a cable row machine pulling a neutral handle to the torso, shoulder blades squeezed
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  bb-row.png
+ЧТО:   Тяга штанги в наклоне
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man bent over at 45 degrees rowing a barbell to the lower abdomen, flat arched back
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  farmer-walk.png
+ЧТО:   Фермерская прогулка
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man walking forward carrying heavy dumbbells at his sides, upright torso
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  french-press.png
+ЧТО:   Французский жим гантелью из-за головы
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man seated pressing one dumbbell overhead behind the head with both hands, elbows pointing up
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  shrug.png
+ЧТО:   Шраги с гантелями
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man standing holding heavy dumbbells at his sides, shoulders shrugged straight up
+
+
+
+######################################################################
+### СВЯЗКИ — то, что идёт в паузах
+######################################################################
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  calf-seated.png
+ЧТО:   Подъём на носки сидя
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man on a seated calf raise machine, knees under the pads, heels lifted
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  calf-standing.png
+ЧТО:   Подъём на носки стоя
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man on a standing calf raise machine, heels lifted high on the platform edge
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  rear-delt-db.png
+ЧТО:   Разведение гантелей в наклоне
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man bent forward raising two light dumbbells out to the sides, back flat
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  cable-fly.png
+ЧТО:   Сведения в кроссовере
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man standing between two cable towers bringing the handles together in front of the chest
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  face-pull.png
+ЧТО:   Тяга к лицу
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man pulling a rope attachment toward the face at a cable machine, elbows high
+
+
+
+######################################################################
+### ЗАМЕНЫ — если тренажёр занят; можно потом
+######################################################################
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  arnold-press.png
+ЧТО:   Арнольд-жим
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man seated performing an arnold press, dumbbells rotating from front to overhead
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  bulgarian-split.png
+ЧТО:   Болгарский присед с гантелями
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man in a bulgarian split squat, rear foot on a bench, dumbbells at his sides, short range
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  split-squat-box.png
+ЧТО:   Болгарский присед с гантелями
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man in a split squat holding dumbbells, short controlled range of motion
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  hack-squat.png
+ЧТО:   Гакк-присед до параллели
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man on a hack squat machine descending to parallel depth only
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  hack-squat-parallel.png
+ЧТО:   Гакк-присед до параллели
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man on a hack squat machine at parallel depth, thighs level with the floor
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  goblet-box-squat.png
+ЧТО:   Гоблет-присед до ящика
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man holding one dumbbell at the chest squatting down to a box at parallel depth
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  landmine-press.png
+ЧТО:   Жим в наклонной раме
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man pressing a barbell loaded in a landmine attachment at a diagonal angle
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  incline-machine.png
+ЧТО:   Жим в наклонном тренажёре
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man seated in an incline chest press machine pushing upward
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  machine-press.png
+ЧТО:   Жим в тренажёре сидя
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man seated in a chest press machine pushing the handles forward
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  leg-press-quad.png
+ЧТО:   Жим ногами до 90°
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man on a leg press machine, knees bent to ninety degrees, feet mid platform
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  leg-press-single.png
+ЧТО:   Жим ногами одной ногой
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man on a leg press machine pressing with one leg only
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  machine-shoulder.png
+ЧТО:   Жим плечами в тренажёре
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man seated in a shoulder press machine pressing the handles overhead
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  bb-bench.png
+ЧТО:   Жим штанги лёжа
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man lying on a flat bench pressing a barbell, spotter arms visible
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  incline-bb.png
+ЧТО:   Жим штанги на наклонной
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man on a thirty degree incline bench pressing a barbell
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  bb-shoulder-press.png
+ЧТО:   Жим штанги сидя
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man seated pressing a barbell overhead from the front, back supported
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  machine-lat-raise.png
+ЧТО:   Махи в тренажёре
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man seated in a lateral raise machine, arms lifting the pads outward
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  incline-lat-raise.png
+ЧТО:   Махи лёжа на наклонной скамье
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man lying sideways on an incline bench raising one dumbbell to the side
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  cable-lat-raise.png
+ЧТО:   Махи на блоке одной рукой
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man standing performing a single arm lateral raise on a low cable pulley
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  rope-hammer.png
+ЧТО:   Молот на блоке с канатом
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man performing a rope hammer curl on a low cable pulley
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  back-extension-45.png
+ЧТО:   Наклонная скамья 45°
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man on a forty five degree back extension bench rising to a straight line
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  good-morning.png
+ЧТО:   Наклоны со штангой
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man with a barbell on his back hinging forward at the hips, back flat
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  reverse-hyper.png
+ЧТО:   Обратная гиперэкстензия
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man on a reverse hyperextension machine, legs swinging up behind
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  dips.png
+ЧТО:   Отжимания на брусьях с весом
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man on parallel bars lowering himself, weight belt with a plate hanging
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  dips-triceps.png
+ЧТО:   Отжимания на брусьях узко
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man on narrow parallel bars keeping the torso vertical, elbows tight
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  assisted-pullup.png
+ЧТО:   Подтягивания в гравитроне
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man using an assisted pull-up machine, knees on the counterweight pad
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  neutral-pullup.png
+ЧТО:   Подтягивания нейтральным хватом
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man pulling up on parallel neutral grip handles, palms facing each other
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  suitcase-walk.png
+ЧТО:   Прогулка с одной гантелью
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man walking forward carrying a single heavy dumbbell in one hand, torso upright
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  trap-bar-walk.png
+ЧТО:   Прогулка с трэп-баром
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man walking forward carrying a loaded trap bar at his sides
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  pullover-cable.png
+ЧТО:   Пуловер на блоке
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man standing at a high cable pulley performing a straight arm pullover
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  cable-rear-fly.png
+ЧТО:   Разведение в кроссовере
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man standing between two cable towers pulling the handles apart behind him
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  overhead-rope.png
+ЧТО:   Разгибания на блоке из-за головы
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man performing an overhead rope triceps extension facing away from a cable machine
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  rope-overhead.png
+ЧТО:   Разгибания на блоке из-за головы
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man performing an overhead rope triceps extension, elbows high and still
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  rdl-db.png
+ЧТО:   Румынская тяга с гантелями
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man performing a romanian deadlift with two dumbbells, hips back, bar path along the thighs
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  leg-curl-seated.png
+ЧТО:   Сгибание ног сидя
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man in a seated leg curl machine curling the pads down
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  leg-curl-standing.png
+ЧТО:   Сгибание ноги стоя в тренажёре
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man at a standing single leg curl machine, one knee flexed
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  leg-curl-single.png
+ЧТО:   Сгибание одной ногой
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man on a lying leg curl machine using only one leg
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  cable-curl.png
+ЧТО:   Сгибания на нижнем блоке
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man standing curling a straight bar on a low cable pulley
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  preacher-ez.png
+ЧТО:   Сгибания на скамье Скотта
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man seated at a preacher bench curling an EZ bar
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  preacher-curl.png
+ЧТО:   Сгибания на скамье Скотта с EZ
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man seated at a preacher bench curling an EZ bar, upper arms on the pad
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  db-curl-alt.png
+ЧТО:   Сгибания с гантелями
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man standing curling dumbbells one arm at a time
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  db-curl.png
+ЧТО:   Сгибания с гантелями с супинацией
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man standing curling two dumbbells with supinated grip
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  wrist-roller.png
+ЧТО:   Скручивание на палке
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man holding a wrist roller device at arms length, rope winding a small plate
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  deadlift-db.png
+ЧТО:   Становая с гантелями по бокам
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man deadlifting two heavy dumbbells held at his sides, flat back
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  reverse-wrist.png
+ЧТО:   Только обратные сгибания
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: close view of forearms on a bench performing reverse wrist curls with a light bar
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  t-bar-row.png
+ЧТО:   Тяга Т-грифа
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man rowing a t-bar row machine with a chest pad, neutral grip
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  neutral-pulldown.png
+ЧТО:   Тяга блока нейтральной рукоятью
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man at a lat pulldown machine pulling a neutral grip handle to the chest
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  close-pulldown.png
+ЧТО:   Тяга блока узким хватом
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man at a lat pulldown machine using a close neutral grip handle
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  machine-row.png
+ЧТО:   Тяга в тренажёре
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man seated in a rowing machine pulling the handles toward the waist
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  chest-row.png
+ЧТО:   Тяга в тренажёре с упором в грудь
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man seated at a chest supported row machine pulling the handles back
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  db-row.png
+ЧТО:   Тяга гантели одной рукой
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man with one knee on a bench rowing a single dumbbell to the hip
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  db-row-single.png
+ЧТО:   Тяга гантели одной рукой
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man with one knee on a bench rowing a single heavy dumbbell
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  rack-pull.png
+ЧТО:   Тяга с плинтов
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man pulling a barbell from pins set just below the knees inside a power rack
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  chest-supported-row.png
+ЧТО:   Тяга с упором в грудь
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man face down on an incline bench rowing two dumbbells
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  ez-french.png
+ЧТО:   Французский жим с EZ-грифом
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man lying on a bench lowering an EZ bar toward the forehead, elbows fixed
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  machine-shrug.png
+ЧТО:   Шраги в тренажёре
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man in a shrug machine lifting the handles straight up
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  trap-bar-shrug.png
+ЧТО:   Шраги с трэп-баром
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man standing inside a trap bar shrugging the shoulders up
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  bb-shrug.png
+ЧТО:   Шраги со штангой
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man standing holding a heavy barbell in front of the thighs, shoulders shrugged up
+
+
+──────────────────────────────────────────────────────────────────────
+ФАЙЛ:  hip-thrust.png
+ЧТО:   Ягодичный мост со штангой
+──────────────────────────────────────────────────────────────────────
+
+Photorealistic dark studio photo of a fit man demonstrating a gym exercise.
+Background: near-black #08090C, empty, no clutter, no windows, no other people.
+Lighting: dramatic blue rim light #2E7CF6 outlining the body and the equipment, soft blue glow on the muscles doing the work, everything else in deep shadow.
+Subject: one athletic man, mid-20s, lean build, plain black t-shirt and black shorts, no logos.
+Equipment: matte black, modern, no brand marks.
+Camera: three-quarter side view, full body in frame, 50mm lens, shallow depth of field.
+Composition: subject centred, generous empty space around him, square 1:1 crop.
+No text, no numbers, no watermark, no UI overlays, no borders, no collage, no split frames.
+Keep the same man, the same clothes, the same lighting and the same background in every image.
+
+Exercise: man with upper back on a bench thrusting a barbell across the hips, glutes locked out
+
