@@ -1,4 +1,9 @@
-import { db } from '../db/db.ts';
+import { db, getSettings, updateSettings } from '../db/db.ts';
+import {
+  carryMeasurements, carryWeights, carryProgress, ownerProfile,
+  stamp, stampDay, STAMPED_TABLES,
+} from '../db/migrate.ts';
+import type { LegacyDated, Settings } from '../db/types.ts';
 
 /**
  * Выгрузка и загрузка всех данных одним файлом. Никакого облака:
@@ -6,10 +11,15 @@ import { db } from '../db/db.ts';
  */
 
 const TABLES = [
-  'meta', 'settings', 'days', 'exercises', 'exerciseState',
-  'sessions', 'setLogs', 'exerciseResults', 'bodyWeight',
-  'measurements', 'catalog',
+  'meta', 'settings', 'profiles', 'progress', 'days', 'exercises', 'exerciseState',
+  'sessions', 'setLogs', 'exerciseResults', 'weightLog', 'girthLog',
+  // Таблицы схемы 4. Читаются и пишутся ради старых файлов — данные из них
+  // подхватываются при загрузке, если профилей в файле нет.
+  'bodyWeight', 'measurements', 'catalog',
 ] as const;
+
+/** Версия 1 — файлы до профилей, версия 2 — с профилями. */
+export const BACKUP_VERSION = 2;
 
 export interface Backup {
   format: 'gym-app';
@@ -24,7 +34,12 @@ export async function exportAll(): Promise<Backup> {
     const table = db.tables.find((t) => t.name === name);
     if (table) tables[name] = await table.toArray();
   }
-  return { format: 'gym-app', version: 1, exportedAt: new Date().toISOString(), tables };
+  return {
+    format: 'gym-app',
+    version: BACKUP_VERSION,
+    exportedAt: new Date().toISOString(),
+    tables,
+  };
 }
 
 export function backupFileName(): string {
@@ -58,5 +73,36 @@ export async function importAll(raw: string): Promise<{ restored: number }> {
       }
     }
   });
+
+  if (!parsed.tables.profiles?.length) await adoptLegacyBackup();
   return { restored };
+}
+
+/**
+ * Файл от версии без профилей. Данные в нём принадлежат одному человеку —
+ * тому, чей это дневник, — поэтому поступаем с ними ровно как миграция базы:
+ * заводим владельца и приписываем ему всё, ничего не выбрасывая.
+ */
+async function adoptLegacyBackup(): Promise<void> {
+  const owner = (await db.profiles.get('owner'))
+    ?? ownerProfile(new Date().toISOString());
+  await db.profiles.put(owner);
+
+  for (const name of STAMPED_TABLES) {
+    const table = db.tables.find((t) => t.name === name);
+    if (!table) continue;
+    await table.toCollection().modify((row: object, ref) => {
+      ref.value = name === 'days' ? stampDay(row, owner.id) : stamp(row, owner.id);
+    });
+  }
+
+  const weights = (await db.bodyWeight.toArray()) as LegacyDated[];
+  if (weights.length) await db.weightLog.bulkPut(carryWeights(weights, owner.id));
+
+  const girth = (await db.measurements.toArray()) as LegacyDated[];
+  if (girth.length) await db.girthLog.bulkPut(carryMeasurements(girth, owner.id));
+
+  const settings: Settings = await getSettings();
+  await db.progress.put(carryProgress(settings, owner.id));
+  await updateSettings({ activeProfileId: owner.id });
 }

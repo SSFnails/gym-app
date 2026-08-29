@@ -45,9 +45,6 @@ const SKIP_REASONS: Array<{ id: SkipReason; label: string }> = [
   { id: 'pain', label: 'БОЛЬ' },
 ];
 
-/** Обязательный пункт разминки в днях B и C — лёгкое сгибание ног. */
-const MANDATORY_WARMUP = 3;
-
 const clock = (s: number) =>
   `${String(Math.floor(s / 60)).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}`;
 
@@ -176,14 +173,14 @@ export default function Workout() {
   /** Записываем подход и уходим на отдых. Отдых нужен всегда, запас — не всегда. */
   const recordAndRest = async () => {
     primeAudio();
-    await logWorkSet(plan.session.id, ex.id, setIdx, item.weight, target, doneReps, null);
+    await logWorkSet(plan.session.profileId, plan.session.id, ex.id, setIdx, item.weight, target, doneReps, null);
     setPhase('rest');
     startRest(ex.rest);
   };
 
   const pushResult = (value: number | null) => {
     (results.current[ex.id] ??= [])[setIdx] = { reps: doneReps, rir: value };
-    void logWorkSet(plan.session.id, ex.id, setIdx, item.weight, target, doneReps, value);
+    void logWorkSet(plan.session.profileId, plan.session.id, ex.id, setIdx, item.weight, target, doneReps, value);
     stopTimer();
     setRir(null);
     if (setIdx + 1 >= sets) void goNextExercise();
@@ -215,19 +212,21 @@ export default function Workout() {
   /* ---------------- Общая разминка ---------------- */
 
   if (phase === 'general') {
-    const mandatoryDay = plan.day.id === 'B' || plan.day.id === 'C';
+    // Обязательный пункт разминки есть только в программе владельца:
+    // это его колено, а не общее правило для всех.
+    const mandatory = plan.mandatoryWarmup;
     const go = () => setPhase(plan.items[0].warmup.length ? 'warmup' : firstPhase(plan.items[0]));
     const proceed = () => {
-      // Обязательный пункт нельзя проскочить молча — но и системным окном
-      // спрашивать нельзя: оно вешает страницу и лезет поверх всего.
-      if (mandatoryDay && !generalChecked[MANDATORY_WARMUP]) { setAskWarmup(true); return; }
+      // Проскочить молча нельзя — но и системным окном спрашивать нельзя:
+      // оно вешает страницу и лезет поверх всего.
+      if (mandatory !== null && !generalChecked[mandatory]) { setAskWarmup(true); return; }
       go();
     };
 
     if (askWarmup) {
       return (
         <main className="screen">
-          <Head left={`ДЕНЬ ${plan.day.id}`} right="" onBack={() => setAskWarmup(false)} />
+          <Head left={`ДЕНЬ ${plan.letter}`} right="" onBack={() => setAskWarmup(false)} />
           <div style={{ padding: '14px var(--pad) 0' }} className="title">Не отмечено сгибание ног</div>
           <Hint>
             В днях B и C лёгкое сгибание ног обязательно — это колено, а не формальность.
@@ -246,7 +245,7 @@ export default function Workout() {
 
     return (
       <main className="screen">
-        <Head left={`ДЕНЬ ${plan.day.id} · НЕД ${String(plan.week).padStart(2, '0')}`} right="РАЗМИНКА" onBack={() => navigate('/')} />
+        <Head left={`ДЕНЬ ${plan.letter} · НЕД ${String(plan.week).padStart(2, '0')}`} right="РАЗМИНКА" onBack={() => navigate('/')} />
         <div style={{ padding: '14px var(--pad) 0' }} className="title">Общая разминка</div>
         <Hint>Один раз за тренировку. Отмечай, что прошёл.</Hint>
         <div style={{ flex: 1, minHeight: 0, marginTop: 14 }}>
@@ -254,7 +253,7 @@ export default function Workout() {
             <CheckRow key={i} on={generalChecked[i]} onClick={() => setGeneralChecked((c) => c.map((v, k) => (k === i ? !v : v)))}>
               <span style={{ flex: 1, fontSize: 14, color: generalChecked[i] ? 'var(--mut2)' : 'var(--fg2)', lineHeight: 1.3 }}>
                 {line}
-                {mandatoryDay && i === MANDATORY_WARMUP && (
+                {mandatory === i && (
                   <span className="label label--acc" style={{ display: 'block', marginTop: 3 }}>ОБЯЗАТЕЛЬНО В ЭТОТ ДЕНЬ</span>
                 )}
               </span>
@@ -318,7 +317,7 @@ export default function Workout() {
 
       // Тест засчитываем как первый подход — это настоящая работа, а не прикидка.
       (results.current[item.exercise.id] ??= [])[0] = { reps: testReps, rir: 0 };
-      await logWorkSet(plan.session.id, item.exercise.id, 0, 0, testReps, testReps, 0);
+      await logWorkSet(plan.session.profileId, plan.session.id, item.exercise.id, 0, 0, testReps, testReps, 0);
 
       const fresh = await startOrResumeSession();
       if (fresh) setPlan(fresh);

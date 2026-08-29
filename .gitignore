@@ -7,3 +7,6 @@ dev-dist
 # Собранный макет — артефакт, исходники рядом в .dc.html
 design/dnevnik-trenirovok.html
 design/collage*.html
+
+# Артефакт tsc, в репозитории ему не место
+tsconfig.tsbuildinfo

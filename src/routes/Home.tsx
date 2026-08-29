@@ -1,16 +1,19 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { db, getSettings, updateSettings } from '../db/db.ts';
+import { db, getProgress, getSettings, updateProgress } from '../db/db.ts';
 import { rollbackTwoWeeks } from '../lib/history.ts';
-import { initDb } from '../db/init.ts';
-import type { Exercise, ExerciseState, ProgramDay, Settings } from '../db/types.ts';
+import { activeProfile, myExercises, stateMap } from '../lib/profiles.ts';
+import type {
+  Exercise, ExerciseState, ProgramDay, ProgramProgress, Profile,
+} from '../db/types.ts';
 import {
-  activeDays, daysSince, deloadSets, estimateMinutes, isDeloadWeek,
+  activeDays, dayLetter, daysSince, deloadSets, estimateMinutes, isDeloadWeek,
   nextDay, plannedReps, plannedWeight, plural, weekNumber,
 } from '../lib/program.ts';
 
 interface HomeData {
-  settings: Settings;
+  profile: Profile;
+  progress: ProgramProgress;
   day: ProgramDay | null;
   exercises: Exercise[];
   states: Record<string, ExerciseState | undefined>;
@@ -21,30 +24,32 @@ interface HomeData {
   avgWeight: number | null;
 }
 
-async function load(): Promise<HomeData> {
-  await initDb();
+/** Данные только активного профиля: чужой дневник сюда не попадает. */
+async function load(): Promise<HomeData | null> {
+  const profile = await activeProfile();
+  if (!profile) return null;
+
   const settings = await getSettings();
-  const days = await db.days.toArray();
-  const day = nextDay(days, settings);
+  const progress = await getProgress(profile.id);
+  const days = (await db.days.where('profileId').equals(profile.id).toArray())
+    .sort((a, b) => a.order - b.order);
+  const day = nextDay(days, progress, settings.dayDEnabled);
   const queueLength = Math.max(1, activeDays(days, settings.dayDEnabled).length);
 
-  const exercises = day
-    ? await db.exercises.where('dayId').equals(day.id).sortBy('order')
-    : [];
+  const exercises = day ? await myExercises(profile.id, day.id) : [];
+  const states = await stateMap(profile.id);
 
-  const rows = await db.exerciseState.bulkGet(exercises.map((e) => e.id));
-  const states: Record<string, ExerciseState | undefined> = {};
-  exercises.forEach((ex, i) => { states[ex.id] = rows[i]; });
-
-  const recent = await db.bodyWeight.orderBy('date').reverse().limit(7).toArray();
+  const recent = (await db.weightLog.where('profileId').equals(profile.id).toArray())
+    .sort((a, b) => b.date.localeCompare(a.date))
+    .slice(0, 7);
   const lastWeight = recent[0]?.kg ?? null;
   const avgWeight = recent.length
     ? Math.round((recent.reduce((s, r) => s + r.kg, 0) / recent.length) * 10) / 10
     : null;
 
   return {
-    settings, day, exercises, states, queueLength,
-    week: weekNumber(settings), lastWeight, avgWeight,
+    profile, progress, day, exercises, states, queueLength,
+    week: weekNumber(progress), lastWeight, avgWeight,
   };
 }
 
@@ -70,20 +75,20 @@ export default function Home() {
     );
   }
 
-  const { settings, day, exercises, states, week, queueLength, lastWeight, avgWeight } = data;
+  const { profile, progress, day, exercises, states, week, queueLength, lastWeight, avgWeight } = data;
   const deload = isDeloadWeek(week);
-  const gap = daysSince(settings.lastSessionAt);
+  const gap = daysSince(progress.lastSessionAt);
   // Круг — это полный проход по очереди дней: A → B → C → (D) и заново.
-  const cycle = Math.floor(settings.dayQueueIndex / queueLength) + 1;
+  const cycle = Math.floor(progress.dayQueueIndex / queueLength) + 1;
 
   return (
     <main className="screen">
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', padding: '0 var(--pad)' }}>
-        <span className="label">ДНЕВНИК</span>
+        <span className="label ellipsis" style={{ maxWidth: '55%' }}>{profile.name.toUpperCase()}</span>
         <span className="label">НЕД {String(week).padStart(2, '0')} · ЦИКЛ {String(cycle).padStart(2, '0')}</span>
       </div>
 
-      {gap !== null && gap > 10 && settings.breakAckAt !== settings.lastSessionAt && (
+      {gap !== null && gap > 10 && progress.breakAckAt !== progress.lastSessionAt && (
         <div style={{ margin: '18px var(--pad) 0', border: '1px solid var(--acc)', background: '#0C1418', padding: '14px' }}>
           <div className="label label--acc">ПЕРЕРЫВ {gap} {plural(gap, 'день').toUpperCase()}</div>
           <div style={{ fontSize: 13, color: 'var(--fg2)', marginTop: 5, lineHeight: 1.4 }}>
@@ -94,15 +99,16 @@ export default function Home() {
           {rolled === null && (
             <div style={{ display: 'grid', gap: 8, marginTop: 12 }}>
               <button className="btn" style={{ minHeight: 52 }}
-                onClick={() => void rollbackTwoWeeks().then(async (n) => {
-                  await updateSettings({ breakAckAt: settings.lastSessionAt });
+                onClick={() => void rollbackTwoWeeks(profile.id).then(async (n) => {
+                  await updateProgress(profile.id, { breakAckAt: progress.lastSessionAt });
                   setRolled(n);
                   setData(await load());
                 })}>
                 ОТКАТИТЬ НА ДВЕ НЕДЕЛИ
               </button>
               <button className="btn btn--ghost"
-                onClick={() => void updateSettings({ breakAckAt: settings.lastSessionAt }).then(async () => setData(await load()))}>
+                onClick={() => void updateProgress(profile.id, { breakAckAt: progress.lastSessionAt })
+                  .then(async () => setData(await load()))}>
                 оставить как есть
               </button>
             </div>
@@ -125,7 +131,7 @@ export default function Home() {
             <div className="label label--acc" style={{ marginBottom: 12 }}>СЛЕДУЮЩАЯ</div>
             <div style={{ display: 'flex', alignItems: 'flex-end', gap: 20 }}>
               <div className="num" style={{ fontSize: 86, fontWeight: 700, lineHeight: 0.78, letterSpacing: '-0.07em' }}>
-                {day.id}
+                {dayLetter(day)}
               </div>
               <div style={{ paddingBottom: 6, fontSize: 18, fontWeight: 600, lineHeight: 1.2, color: 'var(--fg2)' }}>
                 {day.name}

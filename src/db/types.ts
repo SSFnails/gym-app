@@ -1,5 +1,9 @@
 /* ============================================================
-   Типы данных. Один пользователь, всё локально.
+   Типы данных. Несколько профилей, всё локально.
+
+   Личные таблицы помечены profileId: тренировки, состояния упражнений,
+   вес тела и замеры принадлежат конкретному человеку. Программа тоже
+   профильная — у разных людей разные дни и упражнения.
    ============================================================ */
 
 /** Обычное упражнение на повторы или ходьба на дистанцию (фермерская). */
@@ -53,8 +57,42 @@ export interface Profile {
   createdAt: string;
 }
 
+/** Пол и стаж влияют на расчёт, поэтому валидацию держим рядом с типом. */
+export const PROFILE_LIMITS = {
+  heightCm: [120, 230],
+  weightKg: [30, 200],
+  experienceYears: [0, 40],
+} as const;
+
+/* ---------- Ход программы ---------- */
+
+/**
+ * Где человек находится в своей программе. Отдельно от настроек и по строке
+ * на профиль: номер недели и очередь дней — это его личный счёт, и гость,
+ * потренировавшийся на том же телефоне, не должен его сдвигать.
+ */
+export interface ProgramProgress {
+  profileId: string;
+  /** Указатель очереди дней: дни идут по порядку, а не по календарю. */
+  dayQueueIndex: number;
+  /** Дата первой тренировки. От неё считается номер недели. */
+  programStartedAt: string | null;
+  /** Ручная правка номера недели (перебивает расчёт по дате). */
+  weekOverride: number | null;
+  /** Дата последней завершённой тренировки — для правила «перерыв > 10 дней». */
+  lastSessionAt: string | null;
+  /** Какой перерыв уже отработали, чтобы не спрашивать про него дважды. */
+  breakAckAt: string | null;
+}
+
 /* ---------- Настройки ---------- */
 
+/**
+ * Настройки телефона и общие переключатели. Личный счёт человека сюда
+ * не входит — он в ProgramProgress. Поля хода программы остались в строке
+ * от схемы 4: они скопированы, но не удалены, чтобы старую базу можно
+ * было прочитать руками, если что-то пойдёт не так.
+ */
 export interface Settings {
   id: 1;
   /** Чей дневник открыт сейчас. */
@@ -65,15 +103,12 @@ export interface Settings {
   dayDEnabled: boolean;
   /** Связки в паузах. Выключишь — суперсеты исчезнут из всех дней. */
   supersetsEnabled: boolean;
-  /** Дата первой тренировки. От неё считается номер недели. */
+  /* Ниже — след схемы 4. Ход программы теперь в ProgramProgress,
+     эти поля остались как страховка и в расчётах не участвуют. */
   programStartedAt: string | null;
-  /** Ручная правка номера недели (перебивает расчёт по дате). */
   weekOverride: number | null;
-  /** Указатель очереди дней: дни идут по порядку, а не по календарю. */
   dayQueueIndex: number;
-  /** Дата последней завершённой тренировки — для правила «перерыв > 10 дней». */
   lastSessionAt: string | null;
-  /** Какой перерыв уже отработали, чтобы не спрашивать про него дважды. */
   breakAckAt: string | null;
   restSound: boolean;
   restVibrate: boolean;
@@ -85,7 +120,21 @@ export interface Settings {
 /* ---------- Программа ---------- */
 
 export interface ProgramDay {
-  id: string;            // 'A' | 'B' | 'C' | 'D'
+  /**
+   * Ключ строки. У владельца это буква ('A'), у профилей, созданных позже, —
+   * буква с приставкой профиля: ключи в базе общие для всех, а день A есть
+   * у каждого. Существующие строки не переименовываются никогда.
+   */
+  id: string;
+  /**
+   * Чей это день. Необязательное поле, и намеренно: сид и генератор делают
+   * заготовку программы, ничего не зная ни про профили, ни про базу.
+   * Профиль приписывает слой хранения (scopeProgram в db/init.ts),
+   * поэтому в самой базе поле есть у каждой строки.
+   */
+  profileId?: string;
+  /** Буква для показа: A, B, C, D. У старых строк её нет — там id и есть буква. */
+  letter?: string;
   name: string;
   weekdayHint: string;   // подпись, на логику не влияет
   optional: boolean;
@@ -103,6 +152,8 @@ export interface SupersetSpec {
 
 export interface Exercise {
   id: string;
+  /** Как и у дня: заготовка приходит без профиля, приписывает хранение. */
+  profileId?: string;
   dayId: string;
   /** Приоритет внутри дня. Первые три при «мало времени» не убираются. */
   order: number;
@@ -132,6 +183,7 @@ export interface Exercise {
 /** Живое состояние упражнения: что алгоритм поставил на следующий раз. */
 export interface ExerciseState {
   exerciseId: string;
+  profileId: string;
   currentWeight: number;
   nextTargetReps: number[];
   /** Сколько сессий подряд сумма повторов не растёт. 2 → баннер застоя. */
@@ -156,6 +208,7 @@ export interface ExerciseState {
 
 export interface Session {
   id: string;
+  profileId: string;
   dayId: string;
   weekNumber: number;
   isDeload: boolean;
@@ -169,6 +222,7 @@ export interface Session {
 export interface SetLog {
   /** `<сессия>:<упражнение>:<вид>:<номер>` — put по нему перезаписывает, а не плодит. */
   id: string;
+  profileId: string;
   sessionId: string;
   exerciseId: string;
   index: number;
@@ -185,6 +239,7 @@ export interface SetLog {
 
 export interface ExerciseResult {
   id?: number;
+  profileId: string;
   sessionId: string;
   exerciseId: string;
   outcome: Outcome;
@@ -200,11 +255,13 @@ export interface ExerciseResult {
 /* ---------- Тело ---------- */
 
 export interface BodyWeight {
+  profileId: string;
   date: string;  // YYYY-MM-DD
   kg: number;
 }
 
 export interface Measurement {
+  profileId: string;
   date: string;
   chest: number | null;
   waist: number | null;
@@ -252,4 +309,15 @@ export interface Photo {
 export interface MetaRow {
   key: string;
   value: unknown;
+}
+
+/**
+ * Строка старых таблиц взвешиваний и замеров из схемы 4: ключ там был
+ * одна дата, а на двух профилях такой ключ схлопывает записи. Данные
+ * скопированы в weightLog и girthLog, а сами таблицы оставлены лежать —
+ * это единственная копия дневника, удалять её ради чистоты не стоит.
+ */
+export interface LegacyDated {
+  date: string;
+  [key: string]: unknown;
 }

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { db } from '../db/db.ts';
+import { dayLetter } from '../lib/program.ts';
 import { resetTenPercent, floorWeight } from '../lib/progression.ts';
 import type { Exercise, ExerciseResult, Session } from '../db/types.ts';
 
@@ -26,10 +27,14 @@ export default function Summary() {
   const [rows, setRows] = useState<Row[]>([]);
   const [stalledIds, setStalledIds] = useState<string[]>([]);
   const [setsDone, setSetsDone] = useState(0);
+  /** Буква дня: ключ строки у новых профилей идёт с приставкой. */
+  const [letter, setLetter] = useState('—');
 
   const load = async () => {
     if (!id) return;
     const s = await db.sessions.get(id);
+    const day = s ? await db.days.get(s.dayId) : undefined;
+    setLetter(day ? dayLetter(day) : (s?.dayId ?? '—'));
     const results = await db.exerciseResults.where('sessionId').equals(id).toArray();
     const exercises = await db.exercises.bulkGet(results.map((r) => r.exerciseId));
     const states = await db.exerciseState.bulkGet(results.map((r) => r.exerciseId));
@@ -82,7 +87,7 @@ export default function Summary() {
     <main className="screen">
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', padding: '0 var(--pad)' }}>
         <span className="label">ИТОГ</span>
-        <span className="label">ДЕНЬ {session.dayId} · НЕД {String(session.weekNumber).padStart(2, '0')}</span>
+        <span className="label">ДЕНЬ {letter} · НЕД {String(session.weekNumber).padStart(2, '0')}</span>
       </div>
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, minmax(0, 1fr))', padding: '24px var(--pad) 20px' }}>

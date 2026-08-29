@@ -1,33 +1,37 @@
 import { db, getSettings, SCHEMA_VERSION } from './db.ts';
 import { buildExercises, DAYS, GENERAL_WARMUP, initialTargetReps, initialWeight } from './seed.ts';
+import type { Exercise, ExerciseState, ProgramDay } from './types.ts';
 
-export const SEED_VERSION = 1;
+/** Общая разминка для собранной программы: без пунктов под чужое колено. */
+export const GENERIC_WARMUP = [
+  '3 мин велотренажёр или дорожка в горку',
+  'Разведение резины перед собой — 2×15',
+  'Ягодичный мостик — 15',
+  'Круги плечами и запястьями — 30 с',
+];
 
 export interface DbStatus {
   ok: boolean;
   schemaVersion: number;
   tables: string[];
   counts: Record<string, number>;
-  seeded: boolean;
+  /** Есть ли хоть один профиль. Нет — приложение открывается впервые. */
+  hasProfile: boolean;
   error?: string;
 }
 
 /**
  * Открывает базу и гарантирует наличие служебных строк.
- * Сид программы и питания приезжает на этапе 2 — здесь только каркас.
+ * Программу здесь никто не заливает: она принадлежит профилю, а профиль
+ * появляется либо из миграции старой базы, либо из анкеты.
  */
 export async function initDb(): Promise<DbStatus> {
   try {
     await db.open();
     await getSettings();
 
-    const storedVersion = await db.meta.get('schemaVersion');
-    if (!storedVersion) {
-      await db.meta.put({ key: 'schemaVersion', value: SCHEMA_VERSION });
-    }
+    await db.meta.put({ key: 'schemaVersion', value: SCHEMA_VERSION });
 
-    await seedProgram();
-    const seedRow = await db.meta.get('seedVersion');
     const tables = db.tables.map((t) => t.name);
     const counts: Record<string, number> = {};
     for (const table of db.tables) {
@@ -39,7 +43,7 @@ export async function initDb(): Promise<DbStatus> {
       schemaVersion: SCHEMA_VERSION,
       tables,
       counts,
-      seeded: Boolean(seedRow),
+      hasProfile: (counts.profiles ?? 0) > 0,
     };
   } catch (error) {
     return {
@@ -47,50 +51,100 @@ export async function initDb(): Promise<DbStatus> {
       schemaVersion: SCHEMA_VERSION,
       tables: [],
       counts: {},
-      seeded: false,
+      hasProfile: false,
       error: error instanceof Error ? error.message : String(error),
     };
   }
 }
 
 /**
- * Заливает программу при первом запуске. Идемпотентна: повторный вызов
- * ничего не трогает, чтобы не затирать накопленные веса.
+ * Ключ строки программы под профиль. Приставка нужна потому, что первичные
+ * ключи в базе общие: день A и упражнение a1-... есть у каждого человека.
+ * Строки владельца при этом остаются с прежними ключами — к ним привязаны
+ * все накопленные веса, и переименовывать их нельзя.
  */
-export async function seedProgram(): Promise<boolean> {
-  const current = await db.meta.get('seedVersion');
-  if (current?.value === SEED_VERSION) return false;
+export const scopedId = (profileId: string, base: string) => `${profileId}~${base}`;
 
-  const exercises = buildExercises();
+/** Программа владельца из сида, переложенная на конкретный профиль. */
+export function seedProgramFor(profileId: string): { days: ProgramDay[]; exercises: Exercise[] } {
+  return scopeProgram(profileId, DAYS, buildExercises());
+}
+
+/**
+ * Приписывает программе профиль и разводит ключи. Дни и упражнения приходят
+ * из сида или из генератора — оба не знают ни про профили, ни про базу.
+ */
+export function scopeProgram(
+  profileId: string,
+  days: ProgramDay[],
+  exercises: Exercise[],
+): { days: ProgramDay[]; exercises: Exercise[] } {
+  return {
+    days: days.map((d) => ({
+      ...d,
+      id: scopedId(profileId, d.id),
+      letter: d.letter ?? d.id,
+      profileId,
+    })),
+    exercises: exercises.map((ex) => ({
+      ...ex,
+      id: scopedId(profileId, ex.id),
+      dayId: scopedId(profileId, ex.dayId),
+      profileId,
+    })),
+  };
+}
+
+/** Стартовое состояние упражнения: вес из расчёта или расписания, повторы по низу диапазона. */
+export function freshState(ex: Exercise, profileId: string, now: string): ExerciseState {
+  return {
+    exerciseId: ex.id,
+    profileId,
+    currentWeight: initialWeight(ex),
+    nextTargetReps: initialTargetReps(ex),
+    stallCount: 0,
+    lastVolume: null,
+    lastOutcome: null,
+    sessionsDone: 0,
+    variantId: null,
+    supersetWeight: ex.superset?.weight,
+    updatedAt: now,
+  };
+}
+
+/**
+ * Записывает программу профиля. Состояния заводит только для новых
+ * упражнений: уже накопленные веса не трогаются никогда.
+ */
+export async function installProgram(
+  profileId: string,
+  program: { days: ProgramDay[]; exercises: Exercise[] },
+  warmup: string[],
+): Promise<void> {
   const now = new Date().toISOString();
 
   await db.transaction('rw', db.days, db.exercises, db.exerciseState, db.meta, async () => {
-    await db.days.bulkPut(DAYS);
-    await db.exercises.bulkPut(exercises);
+    await db.days.bulkPut(program.days);
+    await db.exercises.bulkPut(program.exercises);
 
-    // Состояние заводим только для новых упражнений — уже накопленные веса не трогаем.
-    const existing = new Set((await db.exerciseState.toArray()).map((s) => s.exerciseId));
-    const fresh = exercises
+    const existing = new Set(
+      (await db.exerciseState.where('profileId').equals(profileId).toArray()).map((s) => s.exerciseId),
+    );
+    const fresh = program.exercises
       .filter((ex) => !existing.has(ex.id))
-      .map((ex) => ({
-        exerciseId: ex.id,
-        currentWeight: initialWeight(ex),
-        nextTargetReps: initialTargetReps(ex),
-        stallCount: 0,
-        lastVolume: null,
-        lastOutcome: null,
-        sessionsDone: 0,
-        variantId: null,
-        supersetWeight: ex.superset?.weight,
-        updatedAt: now,
-      }));
+      .map((ex) => freshState(ex, profileId, now));
     if (fresh.length) await db.exerciseState.bulkPut(fresh);
 
-    await db.meta.put({ key: 'warmup', value: GENERAL_WARMUP });
-    await db.meta.put({ key: 'seedVersion', value: SEED_VERSION });
+    await db.meta.put({ key: `warmup:${profileId}`, value: warmup });
   });
+}
 
-  return true;
+/** Общая разминка профиля. У владельца она лежит под старым ключом. */
+export async function warmupFor(profileId: string): Promise<string[]> {
+  const own = await db.meta.get(`warmup:${profileId}`);
+  if (Array.isArray(own?.value)) return own.value as string[];
+  const legacy = await db.meta.get('warmup');
+  return Array.isArray(legacy?.value) ? (legacy.value as string[]) : GENERAL_WARMUP;
 }
 
 /** Полный сброс — понадобится при импорте JSON и в настройках. */

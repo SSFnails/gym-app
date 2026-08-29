@@ -1,8 +1,11 @@
-import { db, getSettings, updateSettings } from '../db/db.ts';
+import { db, getProgress, getSettings, updateProgress } from '../db/db.ts';
+import { warmupFor } from '../db/init.ts';
+import { MANDATORY_WARMUP_INDEX } from '../db/seed.ts';
 import { planNext, type SetResult } from './progression.ts';
+import { activeProfile, myDays, myExercises } from './profiles.ts';
 import { effective } from './variants.ts';
 import {
-  activeDays, deloadSets, isDeloadWeek, nextDay, plannedWeight, weekNumber,
+  activeDays, dayLetter, deloadSets, isDeloadWeek, nextDay, plannedWeight, weekNumber,
 } from './program.ts';
 import type { Exercise, ExerciseState, ProgramDay, Session, SkipReason } from '../db/types.ts';
 
@@ -22,10 +25,17 @@ export interface PlanItem {
 export interface SessionPlan {
   session: Session;
   day: ProgramDay;
+  /** Буква дня для показа: ключ строки у новых профилей с приставкой. */
+  letter: string;
   week: number;
   deload: boolean;
   items: PlanItem[];
   generalWarmup: string[];
+  /**
+   * Пункт разминки, который нельзя проскочить молча, или null.
+   * Есть только в программе владельца: это его колено, а не общее правило.
+   */
+  mandatoryWarmup: number | null;
 }
 
 const uid = () =>
@@ -58,7 +68,10 @@ function buildWarmup(ex: Exercise, weight: number, week: number): Array<{ weight
   }));
 }
 
-/** Результат этого упражнения в прошлый раз — то, что надо побить. */
+/**
+ * Результат этого упражнения в прошлый раз — то, что надо побить.
+ * Ключи упражнений разведены по профилям, поэтому чужое сюда не попадёт.
+ */
 async function previousResult(exerciseId: string): Promise<{ weight: number; reps: number[] } | null> {
   const last = await db.exerciseResults
     .where('exerciseId').equals(exerciseId)
@@ -75,18 +88,25 @@ async function previousResult(exerciseId: string): Promise<{ weight: number; rep
 
 /** Открывает незакрытую тренировку или заводит новую по очереди дней. */
 export async function startOrResumeSession(): Promise<SessionPlan | null> {
+  const profile = await activeProfile();
+  if (!profile) return null;
+
   const settings = await getSettings();
-  const days = await db.days.toArray();
-  const day = nextDay(days, settings);
+  const progress = await getProgress(profile.id);
+  const days = await myDays(profile.id);
+  const day = nextDay(days, progress, settings.dayDEnabled);
   if (!day) return null;
 
-  const week = weekNumber(settings);
+  const week = weekNumber(progress);
   const deload = isDeloadWeek(week);
 
-  let session = (await db.sessions.where('status').equals('active').toArray())[0];
+  // Незакрытая тренировка ищется только своя: у другого профиля может
+  // висеть собственная, и подхватывать её нельзя.
+  let session = (await db.sessions.where('[profileId+status]').equals([profile.id, 'active']).toArray())[0];
   if (!session) {
     session = {
       id: uid(),
+      profileId: profile.id,
       dayId: day.id,
       weekNumber: week,
       isDeload: deload,
@@ -100,7 +120,7 @@ export async function startOrResumeSession(): Promise<SessionPlan | null> {
   }
 
   const activeDay = days.find((d) => d.id === session.dayId) ?? day;
-  const exercises = await db.exercises.where('dayId').equals(activeDay.id).sortBy('order');
+  const exercises = await myExercises(profile.id, activeDay.id);
   const states = await db.exerciseState.bulkGet(exercises.map((e) => e.id));
 
   const items: PlanItem[] = [];
@@ -122,15 +142,25 @@ export async function startOrResumeSession(): Promise<SessionPlan | null> {
     });
   }
 
-  const warmupRow = await db.meta.get('warmup');
+  const generalWarmup = await warmupFor(profile.id);
+  const letter = dayLetter(activeDay);
 
   return {
     session,
     day: activeDay,
+    letter,
     week: session.weekNumber,
     deload: session.isDeload,
     items,
-    generalWarmup: (warmupRow?.value as string[]) ?? [],
+    generalWarmup,
+    // Лёгкое сгибание ног перед днями B и C — требование его колена.
+    // В собранной программе такого пункта в разминке просто нет.
+    mandatoryWarmup:
+      profile.source === 'seed'
+      && (letter === 'B' || letter === 'C')
+      && generalWarmup.length > MANDATORY_WARMUP_INDEX
+        ? MANDATORY_WARMUP_INDEX
+        : null,
   };
 }
 
@@ -165,6 +195,7 @@ export async function restoreProgress(sessionId: string, items: PlanItem[]): Pro
 }
 
 export async function logWorkSet(
+  profileId: string,
   sessionId: string,
   exerciseId: string,
   index: number,
@@ -175,7 +206,7 @@ export async function logWorkSet(
 ): Promise<void> {
   await db.setLogs.put({
     id: `${sessionId}:${exerciseId}:work:${index}`,
-    sessionId, exerciseId, index, kind: 'work',
+    profileId, sessionId, exerciseId, index, kind: 'work',
     targetWeight, targetReps, weight: targetWeight, reps, rir,
     done: true, at: new Date().toISOString(),
   });
@@ -199,7 +230,8 @@ export async function finishSession(
   if (!session) throw new Error('Тренировка не найдена');
 
   const settings = await getSettings();
-  const days = await db.days.toArray();
+  const progress = await getProgress(session.profileId);
+  const days = await myDays(session.profileId);
   const queueLength = Math.max(1, activeDays(days, settings.dayDEnabled).length);
 
   // Упражнение повторяется раз в круг, то есть примерно раз в неделю —
@@ -220,6 +252,7 @@ export async function finishSession(
 
     if (item.skipped) {
       await db.exerciseResults.put({
+        profileId: session.profileId,
         sessionId, exerciseId: ex.id, outcome: 'skipped',
         reason: 'Пропущено', weightUsed, volume: 0,
         nextWeight: state.currentWeight, nextTargetReps: state.nextTargetReps,
@@ -232,6 +265,7 @@ export async function finishSession(
     const plan = planNext(effective(ex, state), state, item.results, planWeek);
 
     await db.exerciseResults.put({
+      profileId: session.profileId,
       sessionId, exerciseId: ex.id,
       outcome: plan.outcome, reason: plan.reason,
       weightUsed, volume: plan.volume,
@@ -259,10 +293,10 @@ export async function finishSession(
     status: 'done',
   });
 
-  await updateSettings({
-    dayQueueIndex: (settings.dayQueueIndex + 1) % queueLength,
+  await updateProgress(session.profileId, {
+    dayQueueIndex: (progress.dayQueueIndex + 1) % queueLength,
     lastSessionAt: now,
-    programStartedAt: settings.programStartedAt ?? now,
+    programStartedAt: progress.programStartedAt ?? now,
   });
 
   return sessionId;

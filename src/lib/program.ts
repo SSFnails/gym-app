@@ -1,4 +1,9 @@
-import type { Exercise, ExerciseState, ProgramDay, Settings } from '../db/types.ts';
+import type { Exercise, ExerciseState, ProgramDay, ProgramProgress } from '../db/types.ts';
+
+/** Буква дня для показа. У строк владельца ключ и есть буква. */
+export function dayLetter(day: ProgramDay): string {
+  return day.letter ?? day.id;
+}
 
 /** Дни, доступные сейчас: D участвует только если включён в настройках. */
 export function activeDays(days: ProgramDay[], dayDEnabled: boolean): ProgramDay[] {
@@ -11,17 +16,24 @@ export function activeDays(days: ProgramDay[], dayDEnabled: boolean): ProgramDay
  * Следующий день. Дни идут очередью A → B → C → (D) и по кругу,
  * к календарю не привязаны: пропустил вторник — в четверг всё равно A.
  */
-export function nextDay(days: ProgramDay[], settings: Settings): ProgramDay | null {
-  const queue = activeDays(days, settings.dayDEnabled);
+export function nextDay(
+  days: ProgramDay[],
+  progress: Pick<ProgramProgress, 'dayQueueIndex'>,
+  dayDEnabled: boolean,
+): ProgramDay | null {
+  const queue = activeDays(days, dayDEnabled);
   if (queue.length === 0) return null;
-  return queue[settings.dayQueueIndex % queue.length];
+  return queue[progress.dayQueueIndex % queue.length];
 }
 
 /** Номер недели программы. Ручная правка в настройках перебивает расчёт по дате. */
-export function weekNumber(settings: Settings, now = Date.now()): number {
-  if (settings.weekOverride && settings.weekOverride > 0) return settings.weekOverride;
-  if (!settings.programStartedAt) return 1;
-  const days = Math.floor((now - Date.parse(settings.programStartedAt)) / 86_400_000);
+export function weekNumber(
+  progress: Pick<ProgramProgress, 'weekOverride' | 'programStartedAt'>,
+  now = Date.now(),
+): number {
+  if (progress.weekOverride && progress.weekOverride > 0) return progress.weekOverride;
+  if (!progress.programStartedAt) return 1;
+  const days = Math.floor((now - Date.parse(progress.programStartedAt)) / 86_400_000);
   return Math.max(1, Math.floor(days / 7) + 1);
 }
 
@@ -70,10 +82,13 @@ const PLURALS: Record<string, [string, string, string]> = {
   день: ['день', 'дня', 'дней'],
   подход: ['подход', 'подхода', 'подходов'],
   упражнение: ['упражнение', 'упражнения', 'упражнений'],
+  год: ['год', 'года', 'лет'],
 };
 
 export function plural(n: number, key: keyof typeof PLURALS | string): string {
   const forms = PLURALS[key] ?? [key, key, key];
+  // Дробное число всегда просит вторую форму: «0,5 года», не «0,5 лет».
+  if (!Number.isInteger(n)) return forms[1];
   const d10 = n % 10;
   const d100 = n % 100;
   if (d10 === 1 && d100 !== 11) return forms[0];

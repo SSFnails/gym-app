@@ -2,10 +2,11 @@ import { useEffect, useState } from 'react';
 import Chart from '../components/Chart.tsx';
 import { db } from '../db/db.ts';
 import { weeklyAverage, weightSeries, type Point } from '../lib/history.ts';
+import { activeProfileId, myExercises, stateMap } from '../lib/profiles.ts';
 import { effective } from '../lib/variants.ts';
 import type { Exercise, Measurement } from '../db/types.ts';
 
-const FIELDS: Array<{ key: keyof Omit<Measurement, 'date'>; label: string }> = [
+const FIELDS: Array<{ key: keyof Omit<Measurement, 'date' | 'profileId'>; label: string }> = [
   { key: 'chest', label: 'ГРУДЬ' },
   { key: 'waist', label: 'ТАЛИЯ' },
   { key: 'thigh', label: 'БЕДРО' },
@@ -23,36 +24,46 @@ export default function Progress() {
   const [series, setSeries] = useState<Point[]>([]);
   const [measure, setMeasure] = useState<Measurement | null>(null);
   const [draft, setDraft] = useState(70);
+  const [profileId, setProfileId] = useState<string | null>(null);
 
   const load = async () => {
-    const rows = await db.bodyWeight.orderBy('date').toArray();
+    const id = await activeProfileId();
+    setProfileId(id);
+    if (!id) return;
+
+    const rows = (await db.weightLog.where('profileId').equals(id).toArray())
+      .sort((a, b) => a.date.localeCompare(b.date));
     setWeights(rows.map((r) => ({ date: r.date, value: r.kg })));
     if (rows.length) setDraft(rows[rows.length - 1].kg);
 
-    const list = await db.exercises.toArray();
-    const states = await db.exerciseState.bulkGet(list.map((e) => e.id));
-    setExercises(list
-      .map((ex, i) => effective(ex, states[i]))
-      .sort((a, b) => a.dayId.localeCompare(b.dayId) || a.order - b.order));
+    const list = await myExercises(id);
+    const states = await stateMap(id);
+    setExercises(list.map((ex) => effective(ex, states[ex.id])));
 
-    const last = await db.measurements.orderBy('date').last();
-    setMeasure(last ?? null);
+    const girth = (await db.girthLog.where('profileId').equals(id).toArray())
+      .sort((a, b) => a.date.localeCompare(b.date));
+    setMeasure(girth[girth.length - 1] ?? null);
   };
 
   useEffect(() => { void load(); }, []);
   useEffect(() => { if (picked) void weightSeries(picked).then(setSeries); }, [picked]);
 
   const saveWeight = async () => {
-    await db.bodyWeight.put({ date: today(), kg: Math.round(draft * 10) / 10 });
+    if (!profileId) return;
+    await db.weightLog.put({ profileId, date: today(), kg: Math.round(draft * 10) / 10 });
     await load();
   };
 
-  const saveMeasure = async (key: keyof Omit<Measurement, 'date'>, value: number) => {
+  const saveMeasure = async (key: keyof Omit<Measurement, 'date' | 'profileId'>, value: number) => {
+    if (!profileId) return;
     const base: Measurement = measure?.date === today()
       ? measure
-      : { date: today(), chest: null, waist: null, thigh: null, arm: null, neck: null, ...(measure ?? {}) };
-    const next = { ...base, date: today(), [key]: value };
-    await db.measurements.put(next);
+      : {
+          profileId, date: today(), chest: null, waist: null, thigh: null, arm: null, neck: null,
+          ...(measure ?? {}),
+        };
+    const next = { ...base, profileId, date: today(), [key]: value };
+    await db.girthLog.put(next);
     setMeasure(next);
   };
 
