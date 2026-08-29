@@ -485,7 +485,10 @@ export default function Workout() {
   const ss = item.exercise.superset;
   const left = sets - setIdx - 1;
   const swapped = Boolean(item.state.variantId);
-  const shot = exerciseImage(pair && ss ? ss.catalogId : item.exercise.catalogId);
+  const swapTo = activeVariant(item.exercise, item.state);
+  const shot = exerciseImage(
+    pair && ss ? ss.catalogId : (swapTo?.id ?? item.exercise.catalogId),
+  );
 
   return (
     <main className="screen">
@@ -499,7 +502,7 @@ export default function Workout() {
             borderRadius: 'var(--r-card)', overflow: 'hidden',
             border: '1px solid var(--line)', background: 'var(--panel)',
           }}>
-            <img src={shot} alt="" style={{ display: 'block', width: '100%', height: 168, objectFit: 'cover' }} />
+            <img src={shot} alt="" style={{ display: 'block', width: '100%', height: 196, objectFit: 'contain', background: '#000' }} />
           </div>
         </div>
       )}

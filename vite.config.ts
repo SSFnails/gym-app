@@ -29,7 +29,9 @@ export default defineConfig({
         ],
       },
       workbox: {
-        globPatterns: ['**/*.{js,css,html,png,svg,woff2}'],
+        // webp обязателен: картинки упражнений в нём, а без предзагрузки
+        // они бы не открылись в зале без сети.
+        globPatterns: ['**/*.{js,css,html,png,jpg,webp,svg,woff2}'],
         navigateFallback: 'index.html',
         // Служебные страницы (снимки, отладка) не должны подменяться приложением.
         navigateFallbackDenylist: [/^\/__/],
