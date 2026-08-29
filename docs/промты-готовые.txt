@@ -808,7 +808,7 @@ Silhouette must stay readable: if the shape merges with the background, add a su
 No text, no numbers, no watermark, no logos, no faces, no other people.
 Same silhouette style, same blue light and same background in every image.
 
-Exercise: man lying on a flat bench pressing a barbell, spotter arms visible
+Exercise: man lying on a flat bench pressing a barbell, safety bars of the rack visible behind him
 
 
 ──────────────────────────────────────────────────────────────────────
