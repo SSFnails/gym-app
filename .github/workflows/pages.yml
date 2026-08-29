@@ -28,6 +28,11 @@ jobs:
         run: |
           node --test src/lib/progression.test.ts
           node --test src/lib/generator.test.ts
+          node --test src/db/migrate.test.ts
+      - name: Картинки движений
+        # Не роняет сборку: пока часть картинок не дорисована, это сводка,
+        # а не приговор. Нужен приговор — добавить --strict.
+        run: node scripts/audit-images.mjs
       - run: npm run build
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3

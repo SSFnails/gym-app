@@ -4,7 +4,6 @@ import { db, getSettings } from '../db/db.ts';
 import type { VariantDef } from '../db/catalog.ts';
 import type { SkipReason } from '../db/types.ts';
 import { beep, primeAudio, vibrate } from '../lib/feedback.ts';
-import { plural } from '../lib/program.ts';
 import type { SetResult } from '../lib/progression.ts';
 import {
   finishSession, logWorkSet, restoreProgress, startOrResumeSession,
@@ -495,13 +494,22 @@ export default function Workout() {
         right={askSkip ? '' : 'ПРОПУСТИТЬ'} onRight={askSkip ? undefined : () => setAskSkip(true)}
         onBack={() => navigate('/')} />
 
+      {/*
+        Картинка — единственное, что здесь можно сжать. На невысоком экране она
+        отдаёт место, а вес, повторы и их подписи не двигаются: раньше панель
+        подхода молча обрезалась и оставляла два числа без единиц.
+      */}
       {!pair && !askSkip && shot && (
-        <div style={{ padding: '14px var(--pad) 0' }}>
+        <div style={{
+          padding: '14px var(--pad) 0',
+          flex: '0 1 210px', minHeight: 110, maxHeight: 210, overflow: 'hidden',
+        }}>
           <div style={{
+            height: '100%',
             borderRadius: 'var(--r-card)', overflow: 'hidden',
             border: '1px solid var(--line)', background: 'var(--panel)',
           }}>
-            <img src={shot} alt="" style={{ display: 'block', width: '100%', height: 196, objectFit: 'contain', background: '#000' }} />
+            <img src={shot} alt="" style={{ display: 'block', width: '100%', height: '100%', objectFit: 'contain', background: '#000' }} />
           </div>
         </div>
       )}
@@ -524,7 +532,7 @@ export default function Workout() {
         {!pair && !askSkip && (
           <div style={{ display: 'flex', gap: 8, marginTop: 13, flexWrap: 'wrap' }}>
             {tags(item.exercise.catalogId).map((t) => <span key={t} className="chip">{t}</span>)}
-            <button className="chip chip--acc" onClick={() => setSwapOpen(true)}>Заменить</button>
+            <button className="chip chip--acc chip--tap" onClick={() => setSwapOpen(true)}>Заменить</button>
             {swapped && (
               <span className="chip ellipsis" style={{ maxWidth: 190 }}>
                 вместо «{item.exercise.shortName ?? item.exercise.name}»
@@ -587,12 +595,13 @@ export default function Workout() {
         </div>
       ) : (
         <>
-          <div className="panel" style={{ margin: '16px var(--pad) 0' }}>
+          {/* flex: none — числа и подписи под ними не сжимаются никогда. */}
+          <div className="panel" style={{ margin: '16px var(--pad) 0', flex: 'none' }}>
             <div className="panel__head">
               <span className="label label--acc">{pair ? 'СВЯЗКА · БЕЗ ОТДЫХА' : `ПОДХОД ${setIdx + 1} ИЗ ${sets}`}</span>
               <span className="label">{pair ? `ПОСЛЕ ПОДХОДА ${setIdx + 1}` : ''}</span>
             </div>
-            <div style={{ display: 'flex', alignItems: 'center', padding: '34px 0' }}>
+            <div style={{ display: 'flex', alignItems: 'center', padding: '26px 0' }}>
               <div style={{ flex: 1, textAlign: 'center', padding: '0 8px' }}>
                 <div className="big">{kg(pair && ss ? ss.weight : item.weight)}</div>
                 <div className="unit" style={{ marginTop: 12 }}>КИЛОГРАММОВ</div>
@@ -603,13 +612,18 @@ export default function Workout() {
                 <div className="unit" style={{ marginTop: 12 }}>{isDistance && !pair ? 'МЕТРОВ' : 'ПОВТОРОВ'}</div>
               </div>
             </div>
-            <div className="panel__foot">
-              <span className="num" style={{ fontSize: 12, letterSpacing: '0.1em', color: 'var(--mut)' }}>
-                {pair ? 'СРАЗУ, НЕ ОТДЫХАЯ'
-                  : left > 0 ? `ОСТАЛОСЬ ЕЩЁ ${left} ${plural(left, 'подход').toUpperCase()}`
-                  : 'ЭТОТ ПОДХОД ПОСЛЕДНИЙ'}
-              </span>
-            </div>
+            {/*
+              Подвал только тогда, когда говорит новое. Счёт подходов уже стоит
+              в заголовке панели и нарисован полоской выше — третий раз то же
+              самое отнимал место у картинки движения.
+            */}
+            {(pair || left === 0) && (
+              <div className="panel__foot">
+                <span className="num" style={{ fontSize: 12, letterSpacing: '0.1em', color: 'var(--mut)' }}>
+                  {pair ? 'СРАЗУ, НЕ ОТДЫХАЯ' : 'ЭТОТ ПОДХОД ПОСЛЕДНИЙ'}
+                </span>
+              </div>
+            )}
           </div>
 
           {ex.note && !pair && (
@@ -625,7 +639,15 @@ export default function Workout() {
           )}
 
           <div style={{ flex: 1, minHeight: 12 }} />
-          <div style={{ padding: '0 var(--pad) 18px' }}>
+          {/*
+            Главное действие прижато к низу экрана. На невысоком телефоне
+            содержимое не влезает целиком, и раньше кнопка уезжала под сгиб —
+            между подходами её искать нельзя, она всегда под большим пальцем.
+          */}
+          <div style={{
+            position: 'sticky', bottom: 0, zIndex: 1,
+            background: 'var(--bg)', padding: '10px var(--pad) 18px',
+          }}>
             <button className="btn btn--primary" onClick={() => {
               primeAudio();
               if (pair) { void recordAndRest(); return; }
@@ -675,7 +697,7 @@ function Head({ left, right, onRight, onBack }: {
       {onBack && <button className="round round--sm" onClick={onBack} aria-label="Назад">←</button>}
       <span className="label" style={{ flex: 1 }}>{left}</span>
       {right && (onRight
-        ? <button className="chip" onClick={onRight}>{right}</button>
+        ? <button className="chip chip--tap" onClick={onRight}>{right}</button>
         : <span className="chip">{right}</span>)}
     </div>
   );

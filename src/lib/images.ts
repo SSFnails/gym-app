@@ -1,7 +1,12 @@
+import { IMAGE_ALIAS } from './image-alias.ts';
+
 /**
  * Картинки упражнений. Складываются в src/assets/exercises под именем
  * идентификатора — Vite подхватывает их сам, регистрировать ничего не нужно.
  * Файлы уезжают в сборку с хэшами и попадают в офлайн-кеш.
+ *
+ * Чего здесь нет и не нужно: заглушки. Нет картинки — блок с ней просто
+ * не показывается, а название и подпись зоны на экране остаются.
  */
 const FILES = import.meta.glob('../assets/exercises/*.{webp,png,jpg,jpeg}', {
   eager: true,
@@ -16,7 +21,8 @@ for (const [path, url] of Object.entries(FILES)) {
 }
 
 export function exerciseImage(catalogId: string): string | null {
-  return BY_ID[catalogId] ?? null;
+  const alias = IMAGE_ALIAS[catalogId];
+  return BY_ID[catalogId] ?? (alias ? BY_ID[alias] ?? null : null);
 }
 
 export const imageCount = Object.keys(BY_ID).length;

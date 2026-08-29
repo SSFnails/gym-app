@@ -25,10 +25,17 @@ React 19 + TypeScript + Vite 8, данные в IndexedDB через Dexie, PWA
 npm run build                                # сборка и типы
 node --test src/lib/progression.test.ts      # формула прогрессии, 16 проверок
 node --test src/lib/generator.test.ts        # расчёт весов и сборка программы, 10 проверок
+node --test src/db/migrate.test.ts           # перенос данных на профили, 11 проверок
 node scripts/walkthrough.mjs --sessions=2    # проход тренировки насквозь в браузере
+node scripts/migration-check.mjs             # миграция на живой базе: строки и поля целы
+node scripts/profiles-check.mjs              # два профиля: данные разделены, пересчёт, удаление
 node scripts/audit-variants.mjs              # сверка коэффициентов замен
+node scripts/audit-images.mjs                # каким движениям не хватает картинки
 node scripts/shot.mjs <url> out.png --offline # снимок в эмуляции iPhone + проверка офлайна
 ```
+
+Скриптам с браузером нужен поднятый сервер (`npx vite preview --port 4173`);
+если порт другой, адрес передаётся первым аргументом.
 
 Сервер: `npm run dev -- --host` или `npx vite preview --port 4173`.
 
