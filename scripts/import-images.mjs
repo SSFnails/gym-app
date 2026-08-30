@@ -12,6 +12,7 @@ import { existsSync, mkdirSync, readdirSync, statSync, unlinkSync } from 'node:f
 import { basename, extname, join, resolve } from 'node:path';
 import { buildExercises } from '../src/db/seed.ts';
 import { VARIANTS } from '../src/db/catalog.ts';
+import { MOVEMENTS } from '../src/db/movements.ts';
 
 const src = process.argv[2];
 if (!src) {
@@ -25,6 +26,9 @@ for (const ex of buildExercises()) {
   if (ex.superset) known.add(ex.superset.catalogId);
 }
 for (const list of Object.values(VARIANTS)) for (const v of list) known.add(v.id);
+// Пул сборки программы: движения оттуда есть только у собранных программ,
+// и раньше приёмка отвергала их картинки как «неизвестные».
+for (const m of MOVEMENTS) known.add(m.id);
 
 const outDir = new URL('../src/assets/exercises/', import.meta.url);
 mkdirSync(outDir, { recursive: true });
